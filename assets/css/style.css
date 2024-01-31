@@ -1,5 +1,10 @@
 /* Global styles */
 
+*,
+*::after,
+*::before {
+}
+
 body {
     background: #0F1D38;
     font-family: lato, sans-serif;
@@ -10,6 +15,8 @@ body {
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
+    align-items: center;
+    height: 100vh;
 }
 
 h1 {
