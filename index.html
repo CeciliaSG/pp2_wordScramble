@@ -9,8 +9,10 @@
 </head>
 <body>
     <h1 class="h1-heading">Play a Game of Word Scramble</h1>
+
     <div class="game-area">
 <span class="scrambled-word"></span>
+<span class="hint">Hint</span>
 <input type="text"  class="player-input" placeholder="What's your guess?">
 
 <button class="btn" id="check-answer">Check Answer</button>
@@ -18,6 +20,12 @@
 <span id="result">Result</span>
 
 <button class="btn" id="next-word">Next Word</button>
+
+<span class="attempts">Attempts out of three</span>
+    </div>
+    <div class="score-area">
+        <p>Correct scores</p>
+        <p>Incorrect scores</p>
     </div>
   
     <script src="js/script.js"></script>
