@@ -5,21 +5,27 @@ body {
     font-family: lato, sans-serif;
     text-align: center;
     color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
 }
 
-h1{
+h1 {
     color: #DD50C2;
+    text-transform: uppercase;
 }
 
 .game-area {
     background-color: #506B9F;
     box-sizing: border-box;
-    width: 80%;
-    height: 70vh;
+    width: 85%;
+    height: 75vh;
     max-width: 850px;
     max-height: 450px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 2rem;
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
