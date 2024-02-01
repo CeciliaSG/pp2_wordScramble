@@ -38,6 +38,7 @@ body {
 
 .hint {
     display: block;
+    padding: 1rem;
 }
 
 .input {
@@ -89,5 +90,12 @@ body {
 }
 
 .scores {
-    padding: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+
+#correct,
+#incorrect {
+    padding: 5px;
 }
