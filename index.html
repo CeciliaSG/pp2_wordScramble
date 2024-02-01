@@ -22,7 +22,9 @@
     <div class="game-area">
       <div class="guess-word">
         <span class="scrambled-word">Scrambled word</span>
-        <button class="btn" id="hint">Get Hint</button>
+
+        <!-- move or remove 
+        <button class="btn" id="hint">Get Hint</button>-->
       </div>
       <div class="input">
         <input
@@ -31,22 +33,20 @@
           placeholder="What's your guess?">
 
         <button class="btn" id="check-answer">Check Answer</button>
-
-        <span class="attempts">Attempts 0/3</span>
       </div>
 
       <div class="keep-playing">
         <button class="btn" id="next-word">Next Word</button>
+        <div class="score-area">
+            <p class="scores">Correct<span id="correct">0</span></p>
+            <p class="scores">Incorrect<span id="incorrect">0</span></p>
+        </div>
+        </div>
 
         
       </div>
     </div>
 
-    <div class="score-area">
-      <p class="scores">Correct<span id="correct">0</span></p>
-      <p class="scores">Incorrect<span id="incorrect">0</span></p>
-    </div>
-    </div>
 
     <script src="js/script.js"></script>
   </body>

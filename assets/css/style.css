@@ -43,9 +43,12 @@ h1 {
 }
 
 .scrambled-word {
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     padding: 10px;
+    font-size: 85%;
+    padding-bottom: 1.5rem;
+
 }
 
 #hint {
@@ -56,7 +59,6 @@ h1 {
 .input {
     margin-bottom: 15px;
     align-items: center;
-    margin: auto;
 }
 
 .player-input {
@@ -80,8 +82,9 @@ h1 {
 }
 
 .keep-playing {
-    margin-bottom: 2rem;
     padding: 1rem;
+    margin-top: auto;
+    padding: 3rem;
 }
 
 #next-word {
@@ -90,16 +93,21 @@ h1 {
 
 .attempts {
     display: inline-block;
-    margin: 1rem;
+    margin: 0.5rem;
+    font-size: 80%;
 }
 
-/* Styles for score area */
+/* Styles for keep-playing and score area */
+
+.keep-playing {
+    background-color: #192E57;
+}
 
 .score-area {
     padding: 10px;
     display: flex;
     justify-content: center;
-    font-size: 1.1em;
+    font-size: 80%;
 }
 
 .scores {
