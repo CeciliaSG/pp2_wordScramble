@@ -1,22 +1,10 @@
 /* Global styles */
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
 body {
     background: #0F1D38;
     font-family: lato, sans-serif;
-    text-align: center;
     color: blanchedalmond;
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0;
-    align-items: center;
-    height: 100vh;
+   
 }
 
 h1 {
@@ -29,14 +17,7 @@ h1 {
 .game-area {
     background-color: #506B9F;
     box-sizing: border-box;
-    width: 85%;
-    height: 75vh;
-    max-width: 850px;
-    max-height: 450px;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+   
 }
 
 .guess-word {
@@ -44,7 +25,6 @@ h1 {
 }
 
 .input {
-    display: flex;
     margin-bottom: 15px;
     width: 50%;
     align-items: center;
@@ -52,7 +32,6 @@ h1 {
 }
 
 .player-input {
-    flex: 1;
     padding: 10px;
     margin-right: 10px;
     border-radius: 4px;
@@ -66,7 +45,6 @@ h1 {
 }
 
 #result {
-    margin-left: 10px;
 }
 
 #next-word {
@@ -74,14 +52,15 @@ h1 {
 }
 
 .attempts {
-    margin-left: 10px;
+
 }
 
 .score-area {
     padding: 20px;
     margin: 20px;
+    display: flex;
 }
 
-p {
-    margin: 0;
+.scores {
+    padding:25px;
 }
