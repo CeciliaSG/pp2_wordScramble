@@ -1,7 +1,9 @@
 /* Global styles */
 
 body {
-    background-image: url('assets/images/wordscramble_backgr_desktop.webp');
+    background-image: url('../images/wordscramble_backgr_desktop.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: sen, sans-serif;
     color: blanchedalmond;
     text-align: center;
@@ -15,6 +17,10 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     padding: 15px;
+}
+
+.logo {
+    height:120px;
 }
 
 /* Styles for main game area */
