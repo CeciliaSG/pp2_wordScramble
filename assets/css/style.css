@@ -4,7 +4,8 @@ body {
     background: #0F1D38;
     font-family: lato, sans-serif;
     color: blanchedalmond;
-   
+    text-align: center;
+
 }
 
 h1 {
@@ -17,7 +18,14 @@ h1 {
 .game-area {
     background-color: #506B9F;
     box-sizing: border-box;
-   
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh;
+    max-height: 400px;
+    max-width: 850px;
 }
 
 .guess-word {
@@ -26,9 +34,8 @@ h1 {
 
 .input {
     margin-bottom: 15px;
-    width: 50%;
     align-items: center;
-    margin: auto
+    margin: auto;
 }
 
 .player-input {
@@ -44,16 +51,13 @@ h1 {
     border: none;
 }
 
-#result {
-}
+#result {}
 
 #next-word {
     background-color: #DD5061;
 }
 
-.attempts {
-
-}
+.attempts {}
 
 .score-area {
     padding: 20px;
@@ -62,5 +66,5 @@ h1 {
 }
 
 .scores {
-    padding:25px;
+    padding: 25px;
 }
