@@ -133,14 +133,20 @@ h1 {
 @media screen and (min-width: 768px) {
     /* Styles for medium screens */
 
-    .game-area {
-            font-size: 1.3em;
-            padding-top: 30px;
-           
-        }
-}
+    .h1-heading {
+        margin-top: 3rem;
+    }
 
-/* Media query for large screens */
-@media screen and (min-width: 1024px) {
-    /* Styles for large screens */
-}
+    .game-area {
+        font-size: 1.3em;
+        padding-top: 30px;
+    }
+
+    .scrambled-word {
+        letter-spacing: 7px;
+    }
+
+    /* Media query for large screens */
+    @media screen and (min-width: 1024px) {
+        /* Styles for large screens */
+    }
