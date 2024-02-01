@@ -8,7 +8,9 @@ body {
 
 }
 
-/ *Heading styles */ h1 {
+/* Heading styles */
+
+h1 {
     color: #DD50C2;
     text-transform: uppercase;
     text-align: center;
@@ -28,6 +30,8 @@ body {
     height: 70vh;
     max-height: 400px;
     max-width: 850px;
+    font-size: 1.1em;
+    padding: 5px;
 }
 
 .guess-word {
@@ -98,4 +102,12 @@ body {
 #correct,
 #incorrect {
     padding: 5px;
+}
+
+#correct {
+    color: #DD50C2;
+}
+
+#incorrect {
+    color: red;
 }
