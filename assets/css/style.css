@@ -87,8 +87,7 @@ h1 {
 /* Styles for score area */
 
 .score-area {
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
