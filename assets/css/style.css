@@ -7,13 +7,15 @@ body {
     text-align: center;
 
 }
-
+/ *Heading styles */
 h1 {
     color: #DD50C2;
     text-transform: uppercase;
     text-align: center;
     padding: 15px;
 }
+
+/* Styles for main game area */
 
 .game-area {
     background-color: #506B9F;
@@ -29,7 +31,7 @@ h1 {
 }
 
 .guess-word {
-    margin-bottom: 15px;
+    margin-top: 4rem;
 }
 
 .input {
@@ -40,7 +42,6 @@ h1 {
 
 .player-input {
     padding: 10px;
-    margin-right: 10px;
     border-radius: 4px;
 }
 
@@ -53,11 +54,20 @@ h1 {
 
 #result {}
 
+.keep-playing{
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
 #next-word {
     background-color: #DD5061;
 }
 
-.attempts {}
+.attempts {
+    display: inline-block;
+}
+
+/* Styles for score area */
 
 .score-area {
     padding: 20px;
