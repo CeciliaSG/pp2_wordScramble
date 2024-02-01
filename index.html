@@ -17,12 +17,12 @@
     <title>Word Scramble</title>
   </head>
   <body>
-    <h1 class="h1-heading">Play a Game of Word Scramble</h1>
-
+    <h1 class="h1-heading">Word Scramble</h1>
+    <div class="game-container">
     <div class="game-area">
       <div class="guess-word">
         <span class="scrambled-word">Scrambled word</span>
-        <button class="hint">Get hint</button>
+        <button class="btn" id="hint">Get Hint</button>
       </div>
       <div class="input">
         <input
@@ -45,6 +45,7 @@
     <div class="score-area">
       <p class="scores">Correct<span id="correct">0</span></p>
       <p class="scores">Incorrect<span id="incorrect">0</span></p>
+    </div>
     </div>
 
     <script src="js/script.js"></script>

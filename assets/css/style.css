@@ -35,14 +35,22 @@ h1 {
 }
 
 .guess-word {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.hint {
+.scrambled-word {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#hint {
     display: block;
-    padding: 1rem;
+    margin: auto;
 }
 
 .input {
