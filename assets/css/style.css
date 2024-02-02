@@ -1,7 +1,7 @@
 /* Global styles */
 
 body {
-    background-image: url('../images/wordscramble_backgr_mobile.webp');
+    background-image: url('../images/wordscramble_mobile.webp');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sen, sans-serif;
@@ -87,6 +87,11 @@ h1 {
     font-family: sen, sans-serif;
 }
 
+#check-answer{
+    background-color: #192E57;
+    color: white;
+}
+
 .attempts {
     display: inline-block;
     margin: 0.5rem;
@@ -103,6 +108,12 @@ h1 {
     padding-top: 3rem;
 }
 
+#next-word {
+    background-color: #2DB7ED;
+    color: #192E57;
+
+}
+
 .score-area {
     padding: 10px;
     display: flex;
@@ -116,11 +127,9 @@ h1 {
     padding-right: 10px;
     padding-left: 10px;
     font-family: sen, sans-serif;
-
 }
 
-#correct,
-#incorrect {
+#correct {
     padding: 5px;
 }
 
@@ -128,9 +137,6 @@ h1 {
     color: #DD50C2;
 }
 
-#incorrect {
-    color: red;
-}
 
 /* Media query for medium screens */
 @media screen and (min-width: 768px) {
