@@ -54,6 +54,7 @@ h1 {
     padding: 10px;
     font-size: 85%;
     padding-bottom: 1.5rem;
+    font-weight: bold;
 
 }
 
@@ -68,7 +69,6 @@ h1 {
 }
 
 
-
 .player-input {
     padding: 10px;
     margin: 1rem;
@@ -78,13 +78,12 @@ h1 {
 
 .btn {
     padding: 10px;
-    background-color: #55B6DB;
-    color: #fff;
+    background-color: #ffebcd;
+    color: #192E57;
     border: none;
     border-radius: 100px;
     font-family: sen, sans-serif;
 }
-
 
 .attempts {
     display: inline-block;
