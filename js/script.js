@@ -4,3 +4,19 @@ const wineWords = ['Grape', 'Vineyard', 'Cork', 'Barrel', 'Terroir', 'Tannin', '
     'Brut', 'Magnum', 'Sip', 'Swirl', 'Glass', 'Pairing', 'Terroir', 'Zinfandel', 'Reserva', 'Aeration'];
 
 console.log(wineWords[0]);  
+
+function generateRandomWord(){
+
+}
+
+function scrambleWord(){
+
+}
+
+function startGame(){
+
+}
+
+function checkAnswer(){
+    
+}
