@@ -5,7 +5,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sen, sans-serif;
-    color: blanchedalmond;
+    color: rgb(245, 244, 242);
     text-align: center;
 
 }
@@ -20,13 +20,14 @@ h1 {
 }
 
 .logo {
-    height: 120px;
+    width: 250px;
+    height: auto;
 }
 
 /* Styles for main game area */
 
 .game-area {
-    background-color: #2177DB;
+    background-color: #2DB7ED;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -52,9 +53,10 @@ h1 {
     letter-spacing: 4px;
     text-transform: uppercase;
     padding: 10px;
-    font-size: 85%;
+    font-size: 90%;
     padding-bottom: 1.5rem;
     font-weight: bold;
+    color: #02155A;
 
 }
 
