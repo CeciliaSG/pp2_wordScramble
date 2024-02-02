@@ -87,7 +87,7 @@ h1 {
     font-family: sen, sans-serif;
 }
 
-#check-answer{
+#check-answer {
     background-color: #192E57;
     color: white;
 }
@@ -165,15 +165,38 @@ h1 {
 
         /* Styles for large screens */
 
+        .logo {
+            padding-top: 1rem;
+            ;
+        }
+
         body {
-                background-image: url('../images/wordscramble_backgr_desktop.webp');
-                background-size: cover;
-                background-repeat: no-repeat;
+            background-image: url('../images/wordscramble_backgr_desktop.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
-            }
+        .game-area {
+            height: 70vh;
+            max-height: 500px;
+            max-width: 1000px;
+            font-size: 1.1em;
+        }
 
-        .h1-heading {
-            font-size: 300%;
+        #input {
+            margin-top: auto;
+        }
+        
+        #player-input {
+            font-size: 1.1em;
+        }
+
+        .btn {
+            font-size: 1.1em;
+        }
+
+        .scrambled-word {
+            font-size: 1.1em;
         }
     }
 }
