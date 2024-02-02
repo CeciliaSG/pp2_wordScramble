@@ -7,6 +7,7 @@ body {
     font-family: sen, sans-serif;
     color: rgb(245, 244, 242);
     text-align: center;
+    height: 100vh;
 
 }
 
@@ -168,6 +169,7 @@ h1 {
                 background-image: url('../images/wordscramble_backgr_desktop.webp');
                 background-size: cover;
                 background-repeat: no-repeat;
+
             }
 
         .h1-heading {
