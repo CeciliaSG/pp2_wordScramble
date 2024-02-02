@@ -147,7 +147,7 @@ h1 {
     }
 
     .logo {
-        width: 400px;
+        width: 450px;
         height: auto;
     }
 
@@ -162,7 +162,14 @@ h1 {
 
     /* Media query for large screens */
     @media screen and (min-width: 1024px) {
+
         /* Styles for large screens */
+
+        body {
+                background-image: url('../images/wordscramble_backgr_desktop.webp');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
 
         .h1-heading {
             font-size: 300%;
