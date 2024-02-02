@@ -35,10 +35,9 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     height: 70vh;
-    max-height: 400px;
+    max-height: 410px;
     max-width: 700px;
     font-size: 1.1em;
-    padding: 5px;
 }
 
 .guess-word {
