@@ -140,6 +140,11 @@ h1 {
         margin-top: 3rem;
     }
 
+    .logo {
+        width: 400px;
+        height: auto;
+    }
+
     .game-area {
         font-size: 1.3em;
         padding-top: 30px;
