@@ -121,9 +121,10 @@ h1 {
     font-size: 80%;
     padding: 1rem;
     margin-top: auto;
+    font-family: sen, sans-serif;
 }
 
-.scores {
+.score {
     padding-right: 10px;
     padding-left: 10px;
     font-family: sen, sans-serif;
@@ -131,11 +132,10 @@ h1 {
 
 #correct {
     padding: 5px;
+    color: #da651d;
+    font-family: sen, sans-serif;
 }
 
-#correct {
-    color: #DD50C2;
-}
 
 
 /* Media query for medium screens */
