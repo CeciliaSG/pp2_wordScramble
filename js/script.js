@@ -46,14 +46,12 @@ function startGame() {
 
     document.getElementById('scrambled-word').innerText = `${scrambled}`;
     let playerInput = document.getElementById('player-input');
-    
+
     //Should clear the result for the next round
     document.getElementById('result').innerText = '';
 
     //Clear input field after each round
     playerInput.value = '';
-
-    
 
 
 }
@@ -66,11 +64,17 @@ function checkAnswer() {
 
     //Solution from stack overflow
 
-    let newword = document.getElementById('scrambled-word').innerText.split(': ')[1];
+    let newWord = document.getElementById('scrambled-word').innerText.split(': ')[1];
 
-    let scrambledWordText = document.getElementById('scrambled-word').innerText;
-    console.log(scrambledWordText);
+    //Check player input against original word
+    let scrambledWord = document.getElementById('scrambled-word').innerText;
+    let playerInput = document.getElementById('player-input').value.toLowerCase();
 
+    if (playerInput === newWord) {
+        document.getElementById('result').innerText = 'Congratulations!';
+    } else {
+        document.getElementById('result').innerText = 'incorrect!';
+    }
 }
 
 checkAnswer();
