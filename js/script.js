@@ -52,8 +52,6 @@ function startGame() {
 
     //Clear input field after each round
     playerInput.value = '';
-
-
 }
 
 startGame();
@@ -79,3 +77,4 @@ function checkAnswer() {
 }
 
 document.getElementById('check-answer').addEventListener('click', checkAnswer);
+document.getElementById('new-word').addEventListener('click', newWord);
