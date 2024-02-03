@@ -13,7 +13,7 @@ document.getElementById('new-word').addEventListener('click', startGame);
 //Add funtion to generate a random word from the words array
 
 function generateRandomWord() {
-    let randomIndex = words[Math.floor(Math.random() * words.length)];
+    let randomIndex = [Math.floor(Math.random() * words.length)];
 
     //Remove the used/choosen words from the array so it doesn't load twice
     //Using the splice method. Searched Stack Overflow for solution. 
@@ -22,8 +22,11 @@ function generateRandomWord() {
 
     let randomWord = words.splice(randomIndex, 1)[0];
 
+    console.log(randomWord);
+
     return randomWord;
 }
+
 let randomWord = generateRandomWord();
 
 //Function to scramble the letters in the word
@@ -93,6 +96,11 @@ function checkAnswer() {
         document.getElementById('result').innerText = `Incorrect! The correct answer is: ${newWord}`;
 
         startGame();
+
+        currentAttempts = 0;
+
+        document.getElementById('player-input').value = '';
+
 
     }
 
