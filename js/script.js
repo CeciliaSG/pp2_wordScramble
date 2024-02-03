@@ -65,16 +65,28 @@ function checkAnswer() {
     let newWord = document.getElementById('scrambled-word').innerText.split(': ')[1];
 
     //Check player input against original word
+    // let player know answer is incorrect 
+    //Provide correct answer on third attempt
     let scrambled = document.getElementById('scrambled-word').innerText;
     let playerInput = document.getElementById('player-input').value.toLowerCase();
 
     if (playerInput === newWord) {
-        document.getElementById('result').innerText = 'Congratulations!';
+        document.getElementById('result').innerText = 'Congratulations you got it right!';
+
+    } else if (currentAttempts < maxAttempts - 1) {
+        document.getElementById('result').innerText = 'incorrect';
+        currentAttempts++;
+    } else if (currentAttempts < maxAttempts - 1) {
+        document.getElementById('result').innerText = 'incorrect again!';
+        currentAttempt++;
     } else {
-        document.getElementById('result').innerText = 'incorrect!';
+        document.getElementById('result').innerText = `Incorrect! The correct answer is: ${newWord}`;
+        startGame();
     }
 
-}
 
-document.getElementById('check-answer').addEventListener('click', checkAnswer);
-document.getElementById('new-word').addEventListener('click', startGame);
+    document.getElementById('check-answer').addEventListener('click', checkAnswer);
+    document.getElementById('new-word').addEventListener('click', startGame);
+
+    startGame();
+}
