@@ -2,14 +2,21 @@
 // Import words from seperate js-file
 import words from "./words.js"
 
-//Add funtion to gnerate a random word from the word array
+//Add funtion to generate a random word from the word array
 
 function generateRandomWord(){
-   let randomWord = words[Math.floor(Math.random() * words.length)];
+   let randomIndex = words[Math.floor(Math.random() * words.length)];
+
+    //Remove the used/choosen words from the array so it doesn't load twice
+   //Using the splice method. Searched Stack Overflow for solution
+
+   let randomWord = words.splice(randomIndex, 1[0]);
+
+    console.log(generateRandomWord());
    return randomWord;
 }
 
-console.log(generateRandomWord());
+
 
 function scrambleWord(){
 
