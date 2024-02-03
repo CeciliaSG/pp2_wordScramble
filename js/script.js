@@ -40,12 +40,16 @@ function startGame() {
 
     //Get a new word
     let newWord = generateRandomWord();
-    let scrambled = scrambleWord(randomWord);
+    let scrambled = scrambleWord(newWord);
 
     //Updating the html with getElement and template literals
 
     document.getElementById('scrambled-word').innerText = `${scrambled}`;
-    document.getElementById('player-input').innerText = '';
+    let playerInput = document.getElementById('player-input');
+
+    //Clear input field after each round
+
+    playerInput.value = '';
 
 }
 
