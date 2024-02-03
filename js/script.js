@@ -10,11 +10,10 @@ function generateRandomWord(){
     //Remove the used/choosen words from the array so it doesn't load twice
    //Using the splice method. Searched Stack Overflow for solution
 
-   let randomWord = words.splice(randomIndex, 1[0]);
-
-    console.log(generateRandomWord());
+   let randomWord = words.splice(randomIndex, 1)[0];
    return randomWord;
 }
+generateRandomWord();
 
 
 
