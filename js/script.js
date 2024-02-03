@@ -45,6 +45,7 @@ function startGame() {
     //Updating the html with getElement and template literals
 
     document.getElementById('scrambled-word').innerText = `${scrambled}`;
+    document.getElementById('player-input').innerText = '';
 
 }
 
