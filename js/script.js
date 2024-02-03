@@ -24,6 +24,7 @@ let randomWord = generateRandomWord();
 function scrambleWord(word) {
     let characters = word.split('');
 
+    //Fisher-Yates shuffle
     for (let i = characters.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [characters[i], characters[j]] = [characters[j], characters[i]];
@@ -33,10 +34,20 @@ function scrambleWord(word) {
 
 let scrambled = scrambleWord(randomWord);
 
+// Function to iniate game
+
 function startGame() {
-    let nextWord
+
+    //Get a new word
+    let newWord = generateRandomWord();
+    let scrambled = scrambleWord(randomWord);
+
+    console.log(newWord);
+    console.log(scrambled);
 
 }
+
+startGame();
 
 function checkAnswer() {
 
