@@ -6,6 +6,10 @@ import words from "./words.js";
 let currentAttempts = 0;
 let maxAttempts = 3;
 
+//EventListeners
+document.getElementById('check-answer').addEventListener('click', checkAnswer);
+document.getElementById('new-word').addEventListener('click', startGame);
+
 //Add funtion to generate a random word from the words array
 
 function generateRandomWord() {
@@ -42,6 +46,8 @@ let scrambled = scrambleWord(randomWord);
 
 function startGame() {
 
+    currentAttempts = 0;
+
     //Get a new word
     let newWord = generateRandomWord();
     let scrambled = scrambleWord(newWord);
@@ -60,6 +66,7 @@ function startGame() {
 
 startGame();
 
+
 //Checking the players answer by comparing newWord with users input
 
 function checkAnswer() {
@@ -69,26 +76,28 @@ function checkAnswer() {
     let newWord = document.getElementById('scrambled-word').innerText.split(': ')[1];
 
     //Check player input against original word
-    // let player know answer is incorrect 
+    // Let player know answer is incorrect 
     //Provide correct answer on third attempt
     let scrambled = document.getElementById('scrambled-word').innerText;
     let playerInput = document.getElementById('player-input').value.toLowerCase();
 
     if (playerInput === newWord) {
         document.getElementById('result').innerText = 'Congratulations you got it right!';
+    }
 
-    } else if (currentAttempts < maxAttempts - 1) {
-        document.getElementById('result').innerText = 'incorrect';
+    if (currentAttempts < maxAttempts) {
+        document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
-    } else {
+    }
+    else {
         document.getElementById('result').innerText = `Incorrect! The correct answer is: ${newWord}`;
-        
+
         startGame();
+
     }
 
 }
 
-document.getElementById('check-answer').addEventListener('click', checkAnswer);
-document.getElementById('new-word').addEventListener('click', startGame);
 
-startGame();
+
+
