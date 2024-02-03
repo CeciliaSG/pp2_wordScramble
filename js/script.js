@@ -6,6 +6,9 @@ import words from "./words.js";
 let currentAttempts = 0;
 let maxAttempts = 3;
 
+let originalWord;
+let randomWord;
+
 //EventListeners
 document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
@@ -20,14 +23,17 @@ function generateRandomWord() {
     //Splice not working. Need to find solution. 
     //Probably has to do with import of words.
 
-    let randomWord = words.splice(randomIndex, 1)[0];
+    randomWord = words.splice(randomIndex, 1)[0];
+    originalWord = randomWord;
 
     console.log(randomWord);
+    console.log(originalWord);
 
     return randomWord;
+
 }
 
-let randomWord = generateRandomWord();
+//let randomWord = generateRandomWord();
 
 //Function to scramble the letters in the word
 //Using split and join, and Fisher-Yates shuffle algorythm
@@ -43,7 +49,6 @@ function scrambleWord(word) {
     return characters.join('');
 }
 
-let scrambled = scrambleWord(randomWord);
 
 // Function to initiate game, calling generateRandomWord() and scrambleWord(). 
 
@@ -52,12 +57,12 @@ function startGame() {
     currentAttempts = 0;
 
     //Get a new word
-    let newWord = generateRandomWord();
-    let scrambled = scrambleWord(newWord);
+    let randomWord = generateRandomWord();
+    let scrambledWord = scrambleWord(randomWord);
 
     //Updating the html with getElement and template literals
 
-    document.getElementById('scrambled-word').innerText = `${scrambled}`;
+    document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
     let playerInput = document.getElementById('player-input');
 
     //Should clear the result for the next round
@@ -75,34 +80,36 @@ startGame();
 function checkAnswer() {
 
     //Solution from stack overflow
+    let originalWord = randomWord;
 
-    let newWord = document.getElementById('scrambled-word').innerText.split(': ')[1];
+    //let originalWord = document.getElementById('scrambled-word').innerText.split(': ')[1];
 
     //Check player input against original word
     // Let player know answer is incorrect 
     //Provide correct answer on third attempt
-    let scrambled = document.getElementById('scrambled-word').innerText;
+    //let newWord = document.getElementById('scrambled-word').innerText;
     let playerInput = document.getElementById('player-input').value.toLowerCase();
+    let isCorrect = playerInput === originalWord.toLowerCase();
 
-    if (playerInput === newWord) {
+    console.log(originalWord);
+    console.log(playerInput);
+
+    if (isCorrect) {
         document.getElementById('result').innerText = 'Congratulations you got it right!';
-    }
 
-    if (currentAttempts < maxAttempts) {
+    } else if (currentAttempts < maxAttempts) {
         document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
-    }
-    else {
-        document.getElementById('result').innerText = `Incorrect! The correct answer is: ${newWord}`;
+    } else {
+        document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
 
         startGame();
 
         currentAttempts = 0;
 
         document.getElementById('player-input').value = '';
-
-
     }
+
 
 }
 
