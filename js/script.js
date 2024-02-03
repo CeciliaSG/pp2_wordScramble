@@ -34,7 +34,7 @@ function scrambleWord(word) {
 
 let scrambled = scrambleWord(randomWord);
 
-// Function to iniate game
+// Function to iniate game, calling generateRandomWord() and scrambleWord(). 
 
 function startGame() {
 
@@ -42,8 +42,9 @@ function startGame() {
     let newWord = generateRandomWord();
     let scrambled = scrambleWord(randomWord);
 
-    console.log(newWord);
-    console.log(scrambled);
+    //Updating the html with getElement and template literals
+
+    document.getElementById('scrambled-word').innerText = `${scrambled}`;
 
 }
 

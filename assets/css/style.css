@@ -49,7 +49,7 @@ h1 {
     flex-direction: column;
 }
 
-.scrambled-word {
+#scrambled-word {
     letter-spacing: 4px;
     text-transform: uppercase;
     padding: 10px;
@@ -158,7 +158,7 @@ h1 {
         padding-top: 30px;
     }
 
-    .scrambled-word {
+    #scrambled-word {
         letter-spacing: 7px;
     }
 
@@ -196,7 +196,7 @@ h1 {
             font-size: 1.1em;
         }
 
-        .scrambled-word {
+        #scrambled-word {
             font-size: 1.1em;
         }
 
