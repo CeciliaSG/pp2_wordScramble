@@ -34,7 +34,7 @@ function scrambleWord(word) {
 
 let scrambled = scrambleWord(randomWord);
 
-// Function to iniate game, calling generateRandomWord() and scrambleWord(). 
+// Function to initiate game, calling generateRandomWord() and scrambleWord(). 
 
 function startGame() {
 
@@ -50,11 +50,21 @@ function startGame() {
     //Clear input field after each round
 
     playerInput.value = '';
-
 }
 
 startGame();
 
+//Checking the players answer by comparing newWord with users input
+
 function checkAnswer() {
 
+    //Solution from stack overflow
+
+    let newword = document.getElementById('scrambled-word').innerText.split(': ')[1];
+
+    let scrambledWordText = document.getElementById('scrambled-word').innerText;
+    console.log(scrambledWordText);
+
 }
+
+checkAnswer();
