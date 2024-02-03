@@ -67,7 +67,7 @@ function checkAnswer() {
     let newWord = document.getElementById('scrambled-word').innerText.split(': ')[1];
 
     //Check player input against original word
-    let scrambledWord = document.getElementById('scrambled-word').innerText;
+    let scrambled = document.getElementById('scrambled-word').innerText;
     let playerInput = document.getElementById('player-input').value.toLowerCase();
 
     if (playerInput === newWord) {
@@ -75,6 +75,7 @@ function checkAnswer() {
     } else {
         document.getElementById('result').innerText = 'incorrect!';
     }
+
 }
 
-checkAnswer();
+document.getElementById('check-answer').addEventListener('click', checkAnswer);
