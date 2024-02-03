@@ -46,10 +46,16 @@ function startGame() {
 
     document.getElementById('scrambled-word').innerText = `${scrambled}`;
     let playerInput = document.getElementById('player-input');
+    
+    //Should clear the result for the next round
+    document.getElementById('result').innerText = '';
 
     //Clear input field after each round
-
     playerInput.value = '';
+
+    
+
+
 }
 
 startGame();
