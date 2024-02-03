@@ -2,6 +2,10 @@
 // Import words from seperate js-file
 import words from "./words.js";
 
+//Declare variables
+let currentAttempts = 0;
+let maxAttempts = 3;
+
 //Add funtion to generate a random word from the words array
 
 function generateRandomWord() {
@@ -76,17 +80,15 @@ function checkAnswer() {
     } else if (currentAttempts < maxAttempts - 1) {
         document.getElementById('result').innerText = 'incorrect';
         currentAttempts++;
-    } else if (currentAttempts < maxAttempts - 1) {
-        document.getElementById('result').innerText = 'incorrect again!';
-        currentAttempt++;
     } else {
         document.getElementById('result').innerText = `Incorrect! The correct answer is: ${newWord}`;
+        
         startGame();
     }
 
-
-    document.getElementById('check-answer').addEventListener('click', checkAnswer);
-    document.getElementById('new-word').addEventListener('click', startGame);
-
-    startGame();
 }
+
+document.getElementById('check-answer').addEventListener('click', checkAnswer);
+document.getElementById('new-word').addEventListener('click', startGame);
+
+startGame();
