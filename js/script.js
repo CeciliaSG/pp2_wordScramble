@@ -22,21 +22,19 @@ let randomWord = generateRandomWord();
 //Using split and join, and Fisher-Yates shuffle algorythm
 
 function scrambleWord(word) {
-    let characters = word.split('')
+    let characters = word.split('');
 
-    console.log(characters); 
-
-    for (let i = characters.length -1; i > 0; i--){
-        let j = Math.floor(Math.random() * (i+1));
+    for (let i = characters.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
         [characters[i], characters[j]] = [characters[j], characters[i]];
-    } 
+    }
     return characters.join('');
 }
 
 let scrambled = scrambleWord(randomWord);
-console.log(scrambled);
 
 function startGame() {
+    let nextWord
 
 }
 
