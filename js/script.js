@@ -123,7 +123,7 @@ function checkAnswer() {
 
     /*gets the currect score from the DOM and increments it */
     function keepScore() {
-        let currentScore = document.getElementById('score').innerText;
+        let currentScore = parseInt(document.getElementById('score').innerText);
         document.getElementById('score').innerText = ++currentScore;
     }
 

@@ -133,10 +133,17 @@ h1 {
 }
 
 #score {
-    padding: 5px;
+    padding-left: 5px;
     color: #da651d;
     font-family: sen, sans-serif;
     font-weight: bold;
+}
+
+.out-of {
+    color: #da651d;
+    font-family: sen, sans-serif;
+    font-weight: bold;
+
 }
 
 
