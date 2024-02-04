@@ -5,7 +5,6 @@ import words from "./words.js";
 //Declare variables
 let currentAttempts = 0;
 let maxAttempts = 2;
-let attemptsRemaining = maxAttempts;
 
 let wordsPlayed = 0;
 let maxWords = 3;
@@ -69,8 +68,11 @@ function startGame() {
     /* Incrementing the words played */
     wordsPlayed++;
 
+    /* If the words played has reached the maxno. */
+
     if (wordsPlayed === maxWords+1) {
         endGame();
+
         /* Play again button */
         document.getElementById('play-again').style.display = 'block';
     }
@@ -131,6 +133,7 @@ function endGame() {
 }
 
 function resetGame() {
+    document.getElementById('score').innerText = '0';
     wordsPlayed = 0;
     currentAttempts = 0;
     startGame();
