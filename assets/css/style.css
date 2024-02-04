@@ -85,13 +85,13 @@ h1 {
     margin: 5px;
 }
 
-.btn:hover {
-    background-color: #da651d;
-}
-
 #check-answer, #new-word {
     background-color: #192E57;
     color: white;
+}
+
+.btn:hover {
+    border: 2px solid #da651d;
 }
 
 .attempts {
@@ -115,7 +115,6 @@ h1 {
     color: #192E57;
     font-weight: 200;
     display:none;
-
 }
 
 .score-area {
@@ -145,9 +144,7 @@ h1 {
     color: #da651d;
     font-family: sen, sans-serif;
     font-weight: bold;
-
 }
-
 
 
 /* Media query for medium screens */
@@ -215,3 +212,4 @@ h1 {
             font-size: 100%;
         }
     }
+}
