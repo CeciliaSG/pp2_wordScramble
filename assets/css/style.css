@@ -82,13 +82,14 @@ h1 {
     border: none;
     border-radius: 100px;
     font-family: sen, sans-serif;
+    margin: 5px;
 }
 
 .btn:hover {
     background-color: #da651d;
 }
 
-#check-answer {
+#check-answer, #new-word {
     background-color: #192E57;
     color: white;
 }
@@ -109,7 +110,7 @@ h1 {
     padding-top: 3rem;
 }
 
-#new-word {
+#play-again {
     background-color: #2DB7ED;
     color: #192E57;
     font-weight: 200;
