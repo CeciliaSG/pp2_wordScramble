@@ -71,29 +71,27 @@ function startGame() {
     //Clear input field after each round
     playerInput.value = '';
 }
-
 startGame();
+
+//Separate funtion to handle the game in round/attempts
 
 function handleRound() {
 
-if (currentAttempts < maxAttempts) {
-    document.getElementById('result').innerText = 'That is incorrect!';
-    currentAttempts++;
-} else if (currentAttempts === maxAttempts) {
-    document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
-}  else {
-    startGame();
-}
+    if (currentAttempts < maxAttempts) {
+        document.getElementById('result').innerText = 'That is incorrect!';
+        currentAttempts++;
+    } else if (currentAttempts === maxAttempts) {
+        document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
+    } else {
+        startGame();
+    }
 }
 
 //Checking the players answer by comparing newWord with users input
 
 function checkAnswer() {
 
-    //Solution from stack overflow
     let originalWord = randomWord;
-
-    //let originalWord = document.getElementById('scrambled-word').innerText.split(': ')[1];
 
     //Check player input against original word
     // Let player know answer is incorrect 
@@ -108,7 +106,8 @@ function checkAnswer() {
     if (isCorrect) {
         document.getElementById('result').innerText = 'Congratulations you got it right!';
 
-        document.getElementById('player-input').value = '';
+        // Not working
+        // document.getElementById('player-input').value = '';
     } else {
         handleRound();
     }
