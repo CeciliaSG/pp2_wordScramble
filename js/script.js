@@ -57,22 +57,25 @@ function startGame() {
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
 
-    //Get a new word
+    /*Get a new word only if the game is not over */
     let randomWord = generateRandomWord();
     let scrambledWord = scrambleWord(randomWord);
 
     //Updating the html with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
-    //let playerInput = document.getElementById('player-input');
 
-    if (wordsPlayed === maxWords + 1) {
+    /* Incrementing the words played */
+    wordsPlayed++;
+
+    if (wordsPlayed === maxWords -1) {
         endGame();
-
         /* Play again button */
         document.getElementById('play-again').style.display = 'block';
+
     }
-    wordsPlayed++;
+
 }
+
 startGame();
 
 //Separate function to handle the game in-round/attempts
