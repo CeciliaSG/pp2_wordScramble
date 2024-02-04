@@ -7,7 +7,7 @@ let currentAttempts = 0;
 let maxAttempts = 1;
 let attemptsRemaining = maxAttempts;
 
-let wordsPlayed;
+let wordsPlayed = 0;
 let maxWords = 3;
 
 let originalWord;
@@ -53,7 +53,7 @@ function scrambleWord(word) {
 // Function to initiate game, calling generateRandomWord() and scrambleWord(). 
 
 function startGame() {
-    wordsPlayed = 0;
+    wordsPlayed++;
 
     //Get a new word
     let randomWord = generateRandomWord();
@@ -62,6 +62,10 @@ function startGame() {
     //Updating the html with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
     //let playerInput = document.getElementById('player-input');
+
+    if (wordsPlayed === maxWords + 1) {
+        endGame();
+    }
 
 }
 startGame();
@@ -130,9 +134,7 @@ function keepScore() {
 
 // Function to handle end of game
 function endGame() {
-    wordsPlayed++;
-    if (wordsPlayed === maxWords) {
-        document.getElementById('result').innerText = 'Game over';
-        console.log("Inside endGame function");
-    }
+    let currentScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('result').innerText = (`Game over! Your score is: ${currentScore}`);
+    console.log("Inside endGame function");
 }
