@@ -4,7 +4,7 @@ import words from "./words.js";
 
 //Declare variables
 let currentAttempts = 0;
-let maxAttempts = 2;
+let maxAttempts = 1;
 
 let originalWord;
 let randomWord;
