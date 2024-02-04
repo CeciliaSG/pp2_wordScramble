@@ -42,6 +42,10 @@ h1 {
     min-width: 200px;
 }
 
+.how-to-play{
+    left: 5px;
+}
+
 .guess-word {
     margin-top: 1rem;
     margin-left: auto;
@@ -211,6 +215,10 @@ color: #DD50C2;
 
         #scrambled-word {
             font-size: 1.4em;
+        }
+        #result {
+            font-size: 1.4em;
+
         }
 
         .score-area {
