@@ -16,6 +16,7 @@ let randomWord;
 //EventListeners
 document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
+document.getElementById('play-again').addEventListener('click', startGame);
 
 //Add funtion to generate a random word from the words array
 
@@ -53,6 +54,7 @@ function scrambleWord(word) {
 // Function to initiate game, calling generateRandomWord() and scrambleWord(). 
 
 function startGame() {
+    document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
     wordsPlayed++;
 
@@ -66,6 +68,9 @@ function startGame() {
 
     if (wordsPlayed === maxWords + 1) {
         endGame();
+
+        /* Play again button */
+        document.getElementById('play-again').style.display = 'block';
     }
 
 }
@@ -138,5 +143,6 @@ function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('result').innerText = (`Game over! Your score is: ${currentScore}`);
     console.log("Inside endGame function");
+
 }
 
