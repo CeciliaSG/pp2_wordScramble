@@ -16,7 +16,7 @@ let randomWord;
 //EventListeners
 document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
-document.getElementById('play-again').addEventListener('click', startGame);
+document.getElementById('play-again').addEventListener('click', resetGame);
 
 //Add funtion to generate a random word from the words array
 
@@ -67,15 +67,12 @@ function startGame() {
     /* Incrementing the words played */
     wordsPlayed++;
 
-    if (wordsPlayed === maxWords -1) {
+    if (wordsPlayed === maxWords) {
         endGame();
         /* Play again button */
         document.getElementById('play-again').style.display = 'block';
-
     }
-
 }
-
 startGame();
 
 //Separate function to handle the game in-round/attempts
@@ -92,22 +89,6 @@ function handleRound() {
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
     }
 }
-
-/*function startNewRound() {
-    currentAttempts = 0;
-
-    //Get a new word
-    let randomWord = generateRandomWord();
-    let scrambledWord = scrambleWord(randomWord);
-
-    //Updating the html with getElement and template literals
-    document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
-    //let playerInput = document.getElementById('player-input');
-
-    //Should clear the result for the next round
-    //This is not working
-    document.getElementById('result').innerText = '';
-} */
 
 //Checking the players answer by comparing newWord with player input
 
@@ -147,3 +128,8 @@ function endGame() {
     console.log("Inside endGame function");
 }
 
+function resetGame() {
+    wordsPlayed = 0;
+    currentAttempts = 0;
+    startGame();
+}
