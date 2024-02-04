@@ -56,7 +56,6 @@ function scrambleWord(word) {
 function startGame() {
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
-    wordsPlayed++;
 
     //Get a new word
     let randomWord = generateRandomWord();
@@ -72,7 +71,7 @@ function startGame() {
         /* Play again button */
         document.getElementById('play-again').style.display = 'block';
     }
-
+    wordsPlayed++;
 }
 startGame();
 
@@ -143,6 +142,5 @@ function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('result').innerText = (`Game over! Your score is: ${currentScore}`);
     console.log("Inside endGame function");
-
 }
 
