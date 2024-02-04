@@ -5,9 +5,10 @@ import words from "./words.js";
 //Declare variables
 let currentAttempts = 0;
 let maxAttempts = 1;
+let attemptsRemaining = maxAttempts;
 
 let wordsPlayed = 0;
-let maxWords = 30;
+let maxWords = 3;
 
 let originalWord;
 let randomWord;
@@ -61,11 +62,6 @@ function startGame() {
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
     //let playerInput = document.getElementById('player-input');
 
-    //Call endGame function
-    wordsPlayed++;
-    if (wordsPlayed === maxWords) {
-        endGame();
-    }
 }
 startGame();
 
@@ -74,12 +70,14 @@ startGame();
 function handleRound() {
 
     if (currentAttempts < maxAttempts) {
-        document.getElementById('result').innerText = 'That is incorrect!';
+        alert('That is incorrect!');
+        //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
     } else if (currentAttempts === maxAttempts) {
-        document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
+        alert(`Incorrect! The correct answer is: ${originalWord}`);
+       // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
     }
-    }
+}
 
 function startNewRound() {
     currentAttempts = 0;
@@ -116,17 +114,19 @@ function checkAnswer() {
     console.log(playerInput);
 
     if (isCorrect) {
-        document.getElementById('result').innerText = 'Congratulations you got it right!';
+        alert('Congratulations you got it right!');
+        //document.getElementById('result').innerText = 'Congratulations you got it right!';
     } else {
         handleRound();
     }
+
+    // Function to handle end of game
+    function endGame() {
+        wordsPlayed++;
+        if (wordsPlayed === maxWords) {
+            endGame();
+            document.getElementById('result').innerText = 'Game over';
+            console.log("Inside endGame function");
+        }
+    }
 }
-// Function to handle end of game
-function endGame() {
-    document.getElementById('result').innerText = 'Game over';
-}
-
-
-
-
-
