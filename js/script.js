@@ -138,3 +138,4 @@ function endGame() {
     document.getElementById('result').innerText = (`Game over! Your score is: ${currentScore}`);
     console.log("Inside endGame function");
 }
+
