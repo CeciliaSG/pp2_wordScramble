@@ -91,8 +91,20 @@ function handleRound() {
     } else if (currentAttempts === maxAttempts) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
+        
+       changeButtonColor();
+
     }
 }
+
+function changeButtonColor() {
+    let button = document.getElementById('new-word');
+    let currentColor = window.getComputedStyle(button).backgroundColor;
+    let newColor = '#da651d';
+
+    button.style.backgroundColor = newColor; 
+}
+
 
 //Checking the players answer by comparing newWord with player input
 
