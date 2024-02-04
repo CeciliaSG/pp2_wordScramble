@@ -32,8 +32,6 @@ function generateRandomWord() {
     return randomWord;
 }
 
-//let randomWord = generateRandomWord();
-
 //Function to scramble the letters in the word
 //Using split and join, and Fisher-Yates shuffle algorythm
 
@@ -57,11 +55,10 @@ function startGame() {
     let scrambledWord = scrambleWord(randomWord);
 
     //Updating the html with getElement and template literals
-
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
     //let playerInput = document.getElementById('player-input');
 }
-startGame();
+startNewRound();
 
 //Separate funtion to handle the game in round/attempts
 
@@ -84,7 +81,7 @@ function startNewRound() {
 
     //Updating the html with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
-    let playerInput = document.getElementById('player-input');
+    //let playerInput = document.getElementById('player-input');
 
     //Should clear the result for the next round
     //This is not working
@@ -115,6 +112,8 @@ function checkAnswer() {
         handleRound();
     }
 }
+
+
 
 
 
