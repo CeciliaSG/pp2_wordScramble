@@ -4,7 +4,7 @@ import words from "./words.js";
 
 //Declare variables
 let currentAttempts = 0;
-let maxAttempts = 1;
+let maxAttempts = 2;
 let attemptsRemaining = maxAttempts;
 
 let wordsPlayed = 0;
@@ -57,6 +57,8 @@ function startGame() {
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
 
+    currentAttempts = 0;
+
     /*Get a new word only if the game is not over */
     let randomWord = generateRandomWord();
     let scrambledWord = scrambleWord(randomWord);
@@ -67,7 +69,7 @@ function startGame() {
     /* Incrementing the words played */
     wordsPlayed++;
 
-    if (wordsPlayed === maxWords) {
+    if (wordsPlayed === maxWords+1) {
         endGame();
         /* Play again button */
         document.getElementById('play-again').style.display = 'block';
