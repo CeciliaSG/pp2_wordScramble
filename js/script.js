@@ -7,7 +7,7 @@ let currentAttempts = 0;
 let maxAttempts = 1;
 let attemptsRemaining = maxAttempts;
 
-let wordsPlayed = 0;
+let wordsPlayed;
 let maxWords = 3;
 
 let originalWord;
@@ -53,6 +53,7 @@ function scrambleWord(word) {
 // Function to initiate game, calling generateRandomWord() and scrambleWord(). 
 
 function startGame() {
+    wordsPlayed = 0;
 
     //Get a new word
     let randomWord = generateRandomWord();
@@ -65,9 +66,10 @@ function startGame() {
 }
 startGame();
 
-//Separate funtion to handle the game in round/attempts
+//Separate function to handle the game in-round/attempts
 
 function handleRound() {
+    document.getElementById('player-input').value = '';
 
     if (currentAttempts < maxAttempts) {
         alert('That is incorrect!');
@@ -75,11 +77,11 @@ function handleRound() {
         currentAttempts++;
     } else if (currentAttempts === maxAttempts) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
-       // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
+        // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
     }
 }
 
-function startNewRound() {
+/*function startNewRound() {
     currentAttempts = 0;
 
     //Get a new word
@@ -95,7 +97,7 @@ function startNewRound() {
     document.getElementById('result').innerText = '';
 
     document.getElementById('player-input').value = '';
-}
+} */
 
 //Checking the players answer by comparing newWord with player input
 
@@ -117,23 +119,21 @@ function checkAnswer() {
         alert('Congratulations you got it right!');
         //document.getElementById('result').innerText = 'Congratulations you got it right!';
         keepScore();
-    } else {
+    } else
         handleRound();
-    }
+}
 
-    /*gets the currect score from the DOM and increments it */
-    function keepScore() {
-        let currentScore = parseInt(document.getElementById('score').innerText);
-        document.getElementById('score').innerText = ++currentScore;
-    }
+/* Gets the currect score from the DOM and increments it */
+function keepScore() {
+    let currentScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++currentScore;
+}
 
-    // Function to handle end of game
-    function endGame() {
-        wordsPlayed++;
-        if (wordsPlayed === maxWords) {
-            endGame();
-            document.getElementById('result').innerText = 'Game over';
-            console.log("Inside endGame function");
-        }
+// Function to handle end of game
+function endGame() {
+    wordsPlayed++;
+    if (wordsPlayed === maxWords) {
+        document.getElementById('result').innerText = 'Game over';
+        console.log("Inside endGame function");
     }
 }
