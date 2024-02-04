@@ -116,8 +116,15 @@ function checkAnswer() {
     if (isCorrect) {
         alert('Congratulations you got it right!');
         //document.getElementById('result').innerText = 'Congratulations you got it right!';
+        keepScore();
     } else {
         handleRound();
+    }
+
+    /*gets the currect score from the DOM and increments it */
+    function keepScore() {
+        let currentScore = document.getElementById('score').innerText;
+        document.getElementById('score').innerText = ++currentScore;
     }
 
     // Function to handle end of game
