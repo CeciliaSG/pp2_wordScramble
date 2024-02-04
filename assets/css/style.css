@@ -56,7 +56,8 @@ h1 {
     font-size: 90%;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: #02155A;
+    color: #da651d;
+
 
 }
 
@@ -80,11 +81,14 @@ h1 {
 
 .btn {
     padding: 10px;
-    background-color: #ffebcd;
     color: #192E57;
     border: none;
     border-radius: 100px;
     font-family: sen, sans-serif;
+}
+
+.btn:hover {
+    background-color: #da651d;
 }
 
 #check-answer {
@@ -160,6 +164,7 @@ h1 {
 
     #scrambled-word {
         letter-spacing: 7px;
+        font-size: 1em;
     }
 
     /* Media query for large screens */
@@ -197,7 +202,7 @@ h1 {
         }
 
         #scrambled-word {
-            font-size: 1.1em;
+            font-size: 1.4em;
         }
 
         .score-area {
