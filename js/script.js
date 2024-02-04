@@ -30,7 +30,6 @@ function generateRandomWord() {
     console.log(originalWord);
 
     return randomWord;
-
 }
 
 //let randomWord = generateRandomWord();
@@ -48,7 +47,6 @@ function scrambleWord(word) {
     }
     return characters.join('');
 }
-
 
 // Function to initiate game, calling generateRandomWord() and scrambleWord(). 
 
@@ -74,10 +72,10 @@ function handleRound() {
         currentAttempts++;
     } else if (currentAttempts === maxAttempts) {
         document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
-    } 
+    }
 }
 
-function startNewRound(){
+function startNewRound() {
     currentAttempts = 0;
 
     //Get a new word
@@ -93,10 +91,9 @@ function startNewRound(){
     document.getElementById('result').innerText = '';
 
     document.getElementById('player-input').value = '';
-
 }
 
-//Checking the players answer by comparing newWord with users input
+//Checking the players answer by comparing newWord with player input
 
 function checkAnswer() {
 
@@ -114,13 +111,9 @@ function checkAnswer() {
 
     if (isCorrect) {
         document.getElementById('result').innerText = 'Congratulations you got it right!';
-
-        // Not working
-        // document.getElementById('player-input').value = '';
     } else {
         handleRound();
     }
-
 }
 
 
