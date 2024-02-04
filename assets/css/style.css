@@ -39,6 +39,7 @@ h1 {
     max-height: 410px;
     max-width: 700px;
     font-size: 1.1em;
+    min-width: 300px;
 }
 
 .guess-word {
@@ -94,6 +95,10 @@ h1 {
     border: 2px solid #da651d;
 }
 
+#result {
+margin: 40px;
+color: #DD50C2;
+}
 .attempts {
     display: inline-block;
     margin: 0.5rem;
