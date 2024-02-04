@@ -122,8 +122,10 @@ color: #DD50C2;
 #play-again {
     background-color: #2DB7ED;
     color: #192E57;
-    font-weight: 200;
+    font-weight: bold;
     display:none;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .score-area {
