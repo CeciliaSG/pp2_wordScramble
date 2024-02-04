@@ -53,6 +53,7 @@ function scrambleWord(word) {
 // Function to initiate game, calling generateRandomWord() and scrambleWord(). 
 
 function startGame() {
+    document.getElementById('result').innerText = '';
     wordsPlayed++;
 
     //Get a new word
