@@ -95,8 +95,6 @@ function handleRound() {
     //Should clear the result for the next round
     //This is not working
     document.getElementById('result').innerText = '';
-
-    document.getElementById('player-input').value = '';
 } */
 
 //Checking the players answer by comparing newWord with player input
@@ -119,6 +117,7 @@ function checkAnswer() {
         alert('Congratulations you got it right!');
         //document.getElementById('result').innerText = 'Congratulations you got it right!';
         keepScore();
+        document.getElementById('player-input').value = '';
     } else
         handleRound();
 }
