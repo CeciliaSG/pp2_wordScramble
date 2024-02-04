@@ -4,7 +4,7 @@ import words from "./words.js";
 
 //Declare variables
 let currentAttempts = 0;
-let maxAttempts = 3;
+let maxAttempts = 2;
 
 let originalWord;
 let randomWord;
@@ -74,6 +74,17 @@ function startGame() {
 
 startGame();
 
+function handleRound() {
+
+if (currentAttempts < maxAttempts) {
+    document.getElementById('result').innerText = 'That is incorrect!';
+    currentAttempts++;
+} else if (currentAttempts === maxAttempts) {
+    document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
+}  else {
+    startGame();
+}
+}
 
 //Checking the players answer by comparing newWord with users input
 
@@ -97,17 +108,9 @@ function checkAnswer() {
     if (isCorrect) {
         document.getElementById('result').innerText = 'Congratulations you got it right!';
 
-    } else if (currentAttempts < maxAttempts) {
-        document.getElementById('result').innerText = 'That is incorrect!';
-        currentAttempts++;
-    } else {
-        document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
-
-        startGame();
-
-        currentAttempts = 0;
-
         document.getElementById('player-input').value = '';
+    } else {
+        handleRound();
     }
 
 
