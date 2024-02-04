@@ -6,6 +6,9 @@ import words from "./words.js";
 let currentAttempts = 0;
 let maxAttempts = 1;
 
+let wordsPlayed = 0;
+let maxWords = 30;
+
 let originalWord;
 let randomWord;
 
@@ -57,8 +60,14 @@ function startGame() {
     //Updating the html with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
     //let playerInput = document.getElementById('player-input');
+
+    //Call endGame function
+    wordsPlayed++;
+    if (wordsPlayed === maxWords) {
+        endGame();
+    }
 }
-startNewRound();
+startGame();
 
 //Separate funtion to handle the game in round/attempts
 
@@ -70,7 +79,7 @@ function handleRound() {
     } else if (currentAttempts === maxAttempts) {
         document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
     }
-}
+    }
 
 function startNewRound() {
     currentAttempts = 0;
@@ -112,7 +121,10 @@ function checkAnswer() {
         handleRound();
     }
 }
-
+// Function to handle end of game
+function endGame() {
+    document.getElementById('result').innerText = 'Game over';
+}
 
 
 
