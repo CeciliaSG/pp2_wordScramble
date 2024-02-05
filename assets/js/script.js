@@ -1,15 +1,14 @@
 
 // Import words from seperate js-file
 import words from "./words.js";
-
 import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
 let currentAttempts = 0;
-let maxAttempts = 2;
+const MAX_ATTEMPTS = 2;
 
 let wordsPlayed = 0;
-let maxWords = 3;
+const MAX_WORDS = 3;
 
 let originalWord;
 let randomWord;
@@ -27,16 +26,17 @@ function generateRandomWord() {
 
     //Remove the used/choosen words from the array so it doesn't load twice
     //Using the splice method. Searched Stack Overflow for solution. 
-    //Splice not working. Need to find solution. 
-    //Probably has to do with import of words.
 
-    randomWord = words.splice(randomIndex, 1)[0];
+    randomWord = words[randomIndex];
+    words.splice(randomIndex, 1);
+
     originalWord = randomWord;
 
     console.log(randomWord);
     console.log(originalWord);
 
     return randomWord;
+
 }
 
 //Function to scramble the letters in the word
@@ -73,25 +73,26 @@ function startGame() {
 
     /* If the words played has reached the maxno. */
 
-    if (wordsPlayed === maxWords + 1) {
+    if (wordsPlayed === MAX_WORDS +1) {
         endGame();
 
-        /* Play again button */
-        document.getElementById('play-again').style.display = 'block';
+    /* Play again button */
+    document.getElementById('play-again').style.display = 'block';
     }
 }
-startGame();
+    startGame();
+
 
 //Separate function to handle the game in-round/attempts
 
 function handleRound() {
     document.getElementById('player-input').value = '';
 
-    if (currentAttempts < maxAttempts) {
+    if (currentAttempts < MAX_ATTEMPTS) {
         alert('That is incorrect!');
         //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
-    } else if (currentAttempts === maxAttempts) {
+    } else if (currentAttempts === MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
 
@@ -164,15 +165,15 @@ function displayLeaderboard(data) {
 
     table.innerHTML = '';
 
-for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++) {
         let row = `<tr>
         <th>${data[i].name}</th>
          <th>${data[i].score}</th>
-         </tr>`
+         </tr>`;
 
-         table.innerHTML += row;
-    } 
+        table.innerHTML += row;
     }
+}
 displayLeaderboard(leaderboard);
 
 function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
@@ -180,3 +181,5 @@ function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
 }
 
 addPlayerToLeaderBoard('NewPlayer', 30);
+
+console.log(leaderboard);
