@@ -180,5 +180,3 @@ function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
 }
 
 addPlayerToLeaderBoard('NewPlayer', 30);
-
-console.log(leaderboard);
