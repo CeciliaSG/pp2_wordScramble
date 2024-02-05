@@ -165,9 +165,12 @@ function displayLeaderboard() {
 displayLeaderboard();
 
 function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
-    leaderboardData.push({name:playerName, score: score});
+   let playerNameInput = document.getElementById('player-name');
 
+   console.log('playerName');
 }
+
+addPlayerToLeaderBoard();
 
 function populateLeaderboard() {
 
