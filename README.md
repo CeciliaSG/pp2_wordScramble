@@ -214,6 +214,7 @@ This war Card game helped me understand how to import ny word array from a seper
 [<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
 This post on stackoverflow, as well as going back over the course material helped me get started with the leaderboard: [<https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard>]
 The Love Maths walkthrough was used to guide in building the word scramble game.
+Disabling and enabling a button; [<https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737#13831737>]
 
 
 
