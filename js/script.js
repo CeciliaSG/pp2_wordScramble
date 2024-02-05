@@ -93,7 +93,6 @@ function handleRound() {
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
         
        changeButtonColor();
-
     }
 }
 
@@ -123,8 +122,8 @@ function checkAnswer() {
     console.log(playerInput);
 
     if (isCorrect) {
-        alert('Congratulations you got it right!');
-        //document.getElementById('result').innerText = 'Congratulations you got it right!';
+        alert('Congratulations, you got it right!');
+        //document.getElementById('result').innerText = 'Congratulations, you got it right!';
         keepScore();
         document.getElementById('player-input').value = '';
     } else
@@ -140,7 +139,7 @@ function keepScore() {
 // Function to handle end of game
 function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
-    document.getElementById('result').innerText = (`Game over! Your score is: ${currentScore}`);
+    document.getElementById('result').innerText = (`Game End! Your score is: ${currentScore}`);
     console.log("Inside endGame function");
 }
 

@@ -101,13 +101,16 @@ h1 {
 
 #result {
 margin: 40px;
-color: #DD50C2;
+color: #da651d;
+font-weight: bold;
 }
+
+/*
 .attempts {
     display: inline-block;
     margin: 0.5rem;
     font-size: 80%;
-}
+} */
 
 /* Styles for keep-playing and score area */
 
