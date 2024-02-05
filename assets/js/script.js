@@ -173,14 +173,12 @@ for (let i = 0; i < data.length; i++) {
          table.innerHTML += row;
     } 
     }
-
 displayLeaderboard(leaderboard);
 
 function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
-
+    leaderboard.push({ name: playerName, score: initialsScore });
 }
 
+addPlayerToLeaderBoard('NewPlayer', 30);
 
-function populateLeaderboard() {
-
-}
+console.log(leaderboard);
