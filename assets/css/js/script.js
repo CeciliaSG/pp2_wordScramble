@@ -150,3 +150,7 @@ function resetGame() {
     currentAttempts = 0;
     startGame();
 }
+
+function displayLeaderboard {
+    
+}
