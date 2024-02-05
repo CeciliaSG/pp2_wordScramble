@@ -42,7 +42,7 @@ h1 {
     min-width: 200px;
 }
 
-.how-to-play{
+.how-to-play {
     left: 5px;
 }
 
@@ -90,7 +90,8 @@ h1 {
     margin: 5px;
 }
 
-#check-answer, #new-word {
+#check-answer,
+#new-word {
     background-color: #192E57;
     color: white;
 }
@@ -100,9 +101,9 @@ h1 {
 }
 
 #result {
-margin: 40px;
-color: #da651d;
-font-weight: bold;
+    margin: 40px;
+    color: #da651d;
+    font-weight: bold;
 }
 
 /*
@@ -125,10 +126,19 @@ font-weight: bold;
     background-color: #2DB7ED;
     color: #192E57;
     font-weight: bold;
-    display:none;
+    display: none;
     margin: 0 auto;
     margin-top: 1rem;
 }
+
+/* Styles for leaderboard */
+
+#leaderboard {
+    font-size: 70%;
+    font-weight: 100;
+}
+
+.hidden-on-small {}
 
 .score-area {
     padding: 10px;
@@ -220,6 +230,7 @@ font-weight: bold;
         #scrambled-word {
             font-size: 1.4em;
         }
+
         #result {
             font-size: 1.4em;
 

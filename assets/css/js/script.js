@@ -59,7 +59,7 @@ function startGame() {
 
     currentAttempts = 0;
 
-    /*Get a new word only if the game is not over */
+    /* Get a new word only if the game is not over */
     let randomWord = generateRandomWord();
     let scrambledWord = scrambleWord(randomWord);
 
@@ -71,7 +71,7 @@ function startGame() {
 
     /* If the words played has reached the maxno. */
 
-    if (wordsPlayed === maxWords+1) {
+    if (wordsPlayed === maxWords +1) {
         endGame();
 
         /* Play again button */
@@ -99,7 +99,7 @@ function handleRound() {
 
 function changeButtonColor() {
     let button = document.getElementById('new-word');
-    let currentColor = window.getComputedStyle(button).backgroundColor;
+    //let currentColor = window.getComputedStyle(button).backgroundColor;
     let newColor = '#da651d';
 
     button.style.backgroundColor = newColor; 
