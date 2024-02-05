@@ -2,14 +2,7 @@
 // Import words from seperate js-file
 import words from "./words.js";
 
-//import { leaderboard } from "./leaderboardData.js";
-
-let leaderboard = [
-    { name: "Player1", score: "/100" },
-    { name: "Player2", score: "/100" },
-    { name: "Player3", score: "/100" },
-    { name: "Player4", score: "/100" },
-];
+import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
 let currentAttempts = 0;
@@ -184,10 +177,9 @@ for (let i = 0; i < data.length; i++) {
 displayLeaderboard(leaderboard);
 
 function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
-   let playerNameInput = document.getElementById('player-name');
+
 }
 
-addPlayerToLeaderBoard();
 
 function populateLeaderboard() {
 
