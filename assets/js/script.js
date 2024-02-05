@@ -18,14 +18,13 @@ document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
 document.getElementById('play-again').addEventListener('click', resetGame);
 
-
 //Add funtion to generate a random word from the words array
 
 function generateRandomWord() {
     let randomIndex = [Math.floor(Math.random() * words.length)];
 
     //Remove the used/choosen words from the array so it doesn't load twice
-    //Using the splice method. Searched Stack Overflow for solution. 
+    //Using the splice method.
 
     randomWord = words[randomIndex];
     words.splice(randomIndex, 1);
@@ -72,7 +71,7 @@ function startGame() {
 
     /* If the words played has reached the maxno. */
 
-    if (wordsPlayed === MAX_WORDS + 1) {
+    if (wordsPlayed > MAX_WORDS) {
       endGame();
 
       document.getElementById('new-word').disabled = true;
@@ -81,6 +80,7 @@ function startGame() {
       document.getElementById('play-again').style.display = 'block';
     }
 }
+    
 function initialiseGame() {
     startGame();
 }
@@ -126,7 +126,6 @@ function checkAnswer() {
     //Check player input against original word
     // Let player know answer is incorrect 
     //Provide correct answer on third attempt
-    //let newWord = document.getElementById('scrambled-word').innerText;
     let playerInput = document.getElementById('player-input').value.toLowerCase();
     let isCorrect = playerInput === originalWord.toLowerCase();
 
@@ -138,9 +137,10 @@ function checkAnswer() {
         //document.getElementById('result').innerText = 'Congratulations, you got it right!';
         keepScore();
         document.getElementById('player-input').value = '';
-    } else
+    }else {
         handleRound();
-}
+    }
+} 
 
 /* Gets the currect score from the DOM and increments it */
 function keepScore() {
