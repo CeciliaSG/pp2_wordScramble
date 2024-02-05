@@ -163,8 +163,7 @@ document.getElementById('play-again').addEventListener('click', resetGame);
 
     displayLeaderboard();
 
-    function addPlayerToLeaderBoard(name, score){
-
+    function addPlayerToLeaderBoard(playerName, initialsScore = 0){
     }
 
     function populateLeaderboard(){
