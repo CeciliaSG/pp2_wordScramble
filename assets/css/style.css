@@ -14,7 +14,6 @@ body {
 /* Heading styles */
 
 h1 {
-    color: #DD50C2;
     text-transform: uppercase;
     text-align: center;
     padding: 20px 10px 10px 10px;
@@ -133,12 +132,26 @@ h1 {
 
 /* Styles for leaderboard */
 
-#leaderboard {
-    font-size: 70%;
+h2 {
+    font-size: 80%;
+    font-weight: 100;
+    font-family: sen, sans-serif;
+}
+
+#leaderboard{
+    font-size: 14px;
+    font-family: sen,sans-serif;
+    margin:auto;
+}
+
+th {
     font-weight: 100;
 }
 
-.hidden-on-small {}
+
+.hidden-on-small {
+
+}
 
 .score-area {
     padding: 10px;
