@@ -157,8 +157,17 @@ function resetGame() {
     startGame();
 }
 
-function displayLeaderboard() {
-    let table = document.getElementById('leaderboard').innerText;
+function displayLeaderboard(data) {
+    let tableBody = document.getElementById('leaderboardBody');
+
+for (let i = 0; i < data.length; i++) {
+        let row = `<tr>
+        <td>${data[i].name}</td>
+         <td>${data[i].score}</td>
+         </tr>`
+
+         tableBody.innerHTML += row;
+    }
     console.log('leaderboardtext');
 }
 
