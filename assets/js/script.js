@@ -2,7 +2,14 @@
 // Import words from seperate js-file
 import words from "./words.js";
 
-import { leaderboard } from "./leaderboardData.js";
+//import { leaderboard } from "./leaderboardData.js";
+
+let leaderboard = [
+    { name: "Player1", score: "/100" },
+    { name: "Player2", score: "/100" },
+    { name: "Player3", score: "/100" },
+    { name: "Player4", score: "/100" },
+];
 
 //Declare variables
 let currentAttempts = 0;
@@ -150,6 +157,7 @@ function endGame() {
     console.log("Inside endGame function");
 }
 
+/* Reseting the when it is ended */
 function resetGame() {
     document.getElementById('score').innerText = '0';
     wordsPlayed = 0;
@@ -157,26 +165,26 @@ function resetGame() {
     startGame();
 }
 
+/* Leaderboard */
 function displayLeaderboard(data) {
-    let tableBody = document.getElementById('leaderboardBody');
+    let table = document.getElementById('leaderboardBody');
+
+    table.innerHTML = '';
 
 for (let i = 0; i < data.length; i++) {
         let row = `<tr>
-        <td>${data[i].name}</td>
-         <td>${data[i].score}</td>
+        <th>${data[i].name}</th>
+         <th>${data[i].score}</th>
          </tr>`
 
-         tableBody.innerHTML += row;
+         table.innerHTML += row;
+    } 
     }
-    console.log('leaderboardtext');
-}
 
-displayLeaderboard();
+displayLeaderboard(leaderboard);
 
 function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
    let playerNameInput = document.getElementById('player-name');
-
-   console.log('playerName');
 }
 
 addPlayerToLeaderBoard();
