@@ -1,6 +1,7 @@
 
 // Import words from seperate js-file
 import words from "./words.js";
+import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
 let currentAttempts = 0;
