@@ -1,6 +1,7 @@
 
 // Import words from seperate js-file
 import words from "./words.js";
+
 import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
@@ -71,7 +72,7 @@ function startGame() {
 
     /* If the words played has reached the maxno. */
 
-    if (wordsPlayed === maxWords +1) {
+    if (wordsPlayed === maxWords + 1) {
         endGame();
 
         /* Play again button */
@@ -92,8 +93,8 @@ function handleRound() {
     } else if (currentAttempts === maxAttempts) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
-        
-       changeButtonColor();
+
+        changeButtonColor();
     }
 }
 
@@ -102,7 +103,7 @@ function changeButtonColor() {
     //let currentColor = window.getComputedStyle(button).backgroundColor;
     let newColor = '#da651d';
 
-    button.style.backgroundColor = newColor; 
+    button.style.backgroundColor = newColor;
 }
 
 
@@ -151,6 +152,9 @@ function resetGame() {
     startGame();
 }
 
-function displayLeaderboard {
-    
+function displayLeaderboard() {
+    let table = document.getElementById('leaderboard').innerText;
+    console.log('leaderboardtext');
 }
+
+displayLeaderboard();
