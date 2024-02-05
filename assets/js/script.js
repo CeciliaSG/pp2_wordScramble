@@ -80,7 +80,12 @@ function startGame() {
     document.getElementById('play-again').style.display = 'block';
     }
 }
+function initialiseGame() {
     startGame();
+}
+document.addEventListener("DOMContentLoaded", function () {
+    initialiseGame();
+});
 
 
 //Separate function to handle the game in-round/attempts
