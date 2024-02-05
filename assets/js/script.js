@@ -36,7 +36,6 @@ function generateRandomWord() {
     console.log(originalWord);
 
     return randomWord;
-
 }
 
 //Function to scramble the letters in the word
@@ -73,11 +72,13 @@ function startGame() {
 
     /* If the words played has reached the maxno. */
 
-    if (wordsPlayed === MAX_WORDS +1) {
-        endGame();
+    if (wordsPlayed === MAX_WORDS + 1) {
+      endGame();
 
-    /* Play again button */
-    document.getElementById('play-again').style.display = 'block';
+      document.getElementById('new-word').disabled = true;
+
+      /* Play again button */
+      document.getElementById('play-again').style.display = 'block';
     }
 }
 function initialiseGame() {
@@ -113,10 +114,8 @@ function changeButtonColor() {
     if (currentColor === '#da651d') {
         newColor = '';
     }
-
     button.style.backgroundColor = newColor;
 }
-
 
 //Checking the players answer by comparing newWord with player input
 
@@ -161,6 +160,7 @@ function resetGame() {
     document.getElementById('score').innerText = '0';
     wordsPlayed = 0;
     currentAttempts = 0;
+    document.getElementById('new-word').disabled = false;
     startGame();
 }
 
