@@ -14,8 +14,6 @@ let maxWords = 3;
 let originalWord;
 let randomWord;
 
-let leaderboardData[];
-
 //EventListeners
 document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);

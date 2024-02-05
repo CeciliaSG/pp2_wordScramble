@@ -148,9 +148,8 @@ th {
     font-weight: 100;
 }
 
-
 .hidden-on-small {
-
+   display: none;
 }
 
 .score-area {
@@ -205,6 +204,10 @@ th {
         letter-spacing: 7px;
         font-size: 1em;
     }
+
+    .hidden-on-small {
+   display: revert-layer;
+}
 
     /* Media query for large screens */
     @media screen and (min-width: 1024px) {
