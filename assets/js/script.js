@@ -1,7 +1,7 @@
-// Import words from seperate js-file
+// Import words and hints from seperate js-file
 import { words, hints } from "./words.js";
 
-import { leaderboard } from "./leaderboardData.js";
+//import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
 let currentAttempts = 0;
@@ -19,16 +19,18 @@ document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
 document.getElementById('play-again').addEventListener('click', resetGame);
 
-//Add function to generate a random word from the words array
+/* Add function to generate a random word and corresponding hint from the words array */
 
 function generateRandomWordAndHint() {
+
+    /* Copies of the arrays */
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
     let randomWordIndex = [Math.floor(Math.random() * wordsCopy.length)];
     let randomHintIndex = [Math.floor(Math.random() * hintsCopy.length)];
 
-    //Remove the used/choosen words and hints from the array so it doesn't load twice
+    //Remove the used/choosen word and correspongind hint from the array so it doesn't load twice
     //Using the splice method.
 
     randomWord = wordsCopy[randomWordIndex];
@@ -59,7 +61,7 @@ function scrambleWord(word) {
     return characters.join('');
 }
 
-// Function to start game, calling generateRandomWord() and scrambleWord(). 
+// Function to start game, calling generateRandomWordAndHint() and scrambleWord(). 
 
 function startGame() {
     document.getElementById('play-again').style.display = 'none';
@@ -74,7 +76,7 @@ function startGame() {
     let scrambledWord = scrambleWord(randomWord);
     console.log('2', randomHint);
 
-    //Updating the html with getElement and template literals
+    //Updating the html with gnerated word with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
 
     /* Incrementing the words played */
@@ -119,6 +121,10 @@ function handleRound() {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
         changeButtonColor();
+
+        /* This not working */
+    } else if (currentAttempts >= MAX_ATTEMPTS && wordsPlayed >= MAX_WORDS){
+        endGame();
     }
 }
 
@@ -126,7 +132,7 @@ function handleRound() {
 
 function changeButtonColor() {
     let button = document.getElementById('new-word');
-    let currentColor = window.getComputedStyle(button).getPropertyValue('background-color');
+    //let currentColor = window.getComputedStyle(button).getPropertyValue('background-color');
     let newColor = 'var(--orange)';
 
     /*if(newColor === 'var(--orange)') {
