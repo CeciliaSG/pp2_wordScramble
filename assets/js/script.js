@@ -108,12 +108,13 @@ function handleRound() {
 
 function changeButtonColor() {
     let button = document.getElementById('new-word');
-    let currentColor = window.getComputedStyle(button).backgroundColor;
-    let newColor = '#da651d';
+    let currentColor = window.getComputedStyle(button).getPropertyValue('--orange');
+    let newColor = 'var(--orange)';
 
-    if (currentColor === '#da651d') {
+    if (currentColor === 'var(--orange)') {
         newColor = '';
     }
+
     button.style.backgroundColor = newColor;
 }
 

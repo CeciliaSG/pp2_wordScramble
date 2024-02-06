@@ -1,5 +1,11 @@
 /* Global styles */
 
+:root {
+    --orange: #da651d;
+    --light-blue: #2DB7ED;
+
+}
+
 body {
     background-image: url('../images/wordscramble_mobile.webp');
     background-size: cover;
@@ -60,7 +66,7 @@ h1 {
     font-size: 90%;
     padding-bottom: 1.5rem;
     font-weight: bold;
-    color: #da651d;
+    color: var(--orange);
 }
 
 #hint {
