@@ -25,21 +25,22 @@ function generateRandomWordAndHint() {
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
-    let randomIndex = [Math.floor(Math.random() * wordsCopy.length)];
+    let randomWordIndex = [Math.floor(Math.random() * wordsCopy.length)];
+    let randomHintIndex = [Math.floor(Math.random() * hintsCopy.length)];
 
     //Remove the used/choosen words and hints from the array so it doesn't load twice
     //Using the splice method.
 
-    randomWord = wordsCopy[randomIndex];
-    randomHint = hintsCopy[randomIndex];
-    wordsCopy.splice(randomIndex, 1);
-    hintsCopy.splice(randomIndex, 1);
+    randomWord = wordsCopy[randomWordIndex];
+    randomHint = hintsCopy[randomHintIndex];
+    wordsCopy.splice(randomWordIndex, 1);
+    hintsCopy.splice(randomHintIndex, 1);
 
     originalWord = randomWord;
 
     console.log('1', randomWord);
     console.log(originalWord);
-    console.log(randomHint);
+    console.log('1', randomHint);
 
     return { word: randomWord, hint: randomHint };
 }
@@ -58,7 +59,7 @@ function scrambleWord(word) {
     return characters.join('');
 }
 
-// Function to initiate game, calling generateRandomWord() and scrambleWord(). 
+// Function to start game, calling generateRandomWord() and scrambleWord(). 
 
 function startGame() {
     document.getElementById('play-again').style.display = 'none';
@@ -71,7 +72,6 @@ function startGame() {
     /* Get a new word only if the game is not over */
     let { word: randomWord, hint: randomHint } = generateRandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
-    document.getElementById('hint').textContent = randomHint;
     console.log('2', randomHint);
 
     //Updating the html with getElement and template literals
