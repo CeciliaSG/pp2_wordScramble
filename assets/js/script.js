@@ -100,7 +100,6 @@ function handleRound() {
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
-        document.getElementById('check-answer').disabled = true;
         changeButtonColor();
     }
 }
@@ -138,6 +137,7 @@ function checkAnswer() {
         keepScore();
         document.getElementById('player-input').value = '';
         changeButtonColor();
+        currentAttempts = 0;
     } else {
         handleRound();
         currentAttempts++;
@@ -148,8 +148,6 @@ function checkAnswer() {
 function keepScore() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('score').innerText = ++currentScore;
-
-    
 }
 
 // Function to handle end of game
