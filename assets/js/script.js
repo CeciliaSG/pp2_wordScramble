@@ -71,16 +71,16 @@ function startGame() {
 
     /* If the words played has reached the maxno. */
 
-    if (wordsPlayed > MAX_WORDS) {
-      endGame();
+    if (wordsPlayed >= MAX_WORDS + 1) {
+        endGame();
 
-      document.getElementById('new-word').disabled = true;
+        document.getElementById('new-word').disabled = true;
 
-      /* Play again button */
-      document.getElementById('play-again').style.display = 'block';
+        /* Play again button */
+        document.getElementById('play-again').style.display = 'block';
     }
 }
-    
+
 function initialiseGame() {
     startGame();
 }
@@ -114,7 +114,7 @@ function changeButtonColor() {
     if (currentColor === 'var(--orange)') {
         newColor = '';
     }
-// Check how to write this better
+    // Check how to write this better
     button.style.backgroundColor = newColor;
 }
 
@@ -139,10 +139,15 @@ function checkAnswer() {
         keepScore();
         document.getElementById('player-input').value = '';
         changeButtonColor();
-    }else {
+    } else {
         handleRound();
     }
-} 
+
+    if (wordsPlayed >= MAX_WORDS + 1) {
+        endGame();
+        document.getElementById('new-word').disabled = true;
+    }
+}
 
 /* Gets the currect score from the DOM and increments it */
 function keepScore() {
