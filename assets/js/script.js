@@ -1,5 +1,5 @@
 // Import words from seperate js-file
-import {words, hints} from "./words.js";
+import { words, hints } from "./words.js";
 
 
 import { leaderboard } from "./leaderboardData.js";
@@ -13,6 +13,7 @@ const MAX_WORDS = 3;
 
 let originalWord;
 let randomWord;
+let randomHint;
 
 //EventListeners
 document.getElementById('check-answer').addEventListener('click', checkAnswer);
@@ -21,21 +22,23 @@ document.getElementById('play-again').addEventListener('click', resetGame);
 
 //Add funtion to generate a random word from the words array
 
-function generateRandomWord() {
+function generateRandomWordAndHint() {
     let randomIndex = [Math.floor(Math.random() * words.length)];
 
     //Remove the used/choosen words from the array so it doesn't load twice
     //Using the splice method.
 
     randomWord = words[randomIndex];
+    randomHint = hints[randomIndex];
     words.splice(randomIndex, 1);
 
     originalWord = randomWord;
 
     console.log(randomWord);
     console.log(originalWord);
+    console.log(randomHint);
 
-    return randomWord;
+    return { word: randomWord, hint: randomHint };
 }
 
 //Function to scramble the letters in the word
@@ -63,8 +66,9 @@ function startGame() {
     currentAttempts = 0;
 
     /* Get a new word only if the game is not over */
-    let randomWord = generateRandomWord();
+    let { word: randomWord, hint: randomHint } = generateRandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
+    console.log('2', randomHint);
 
     //Updating the html with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
@@ -80,7 +84,7 @@ function startGame() {
         document.getElementById('new-word').disabled = true;
 
         /* Play again button */
-        document.getElementById('play-again').style.display = 'block';
+        document.getElementById('play-again').innerText = randomHint;
     }
 }
 
@@ -103,8 +107,9 @@ function handleRound() {
         alert('That is incorrect!');
         //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
-        document.getElementById('hint').style.display = 'block';
-       
+        document.getElementById('hint').innerText.display = block;
+        console.log('3', randomHint);
+
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
@@ -128,17 +133,17 @@ function changeButtonColor() {
 
 /* Function to reset button colour */
 
-function resetCheckButtonColor(){
+function resetCheckButtonColor() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
 }
 
 /* Functions to disable and enable chack answer button */
 
-function disableCheckButton(){
+function disableCheckButton() {
     document.getElementById('check-answer').disabled = true;
 }
 
-function enableCheckButton(){
+function enableCheckButton() {
     document.getElementById('check-answer').disabled = false;
 }
 
