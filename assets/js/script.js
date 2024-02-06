@@ -70,7 +70,7 @@ function startGame() {
 
     /* If the words played has reached the maxno. */
 
-    if (wordsPlayed >= MAX_WORDS + 1) {
+    if (wordsPlayed > MAX_WORDS) {
         endGame();
 
         document.getElementById('new-word').disabled = true;
