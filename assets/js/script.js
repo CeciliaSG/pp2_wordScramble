@@ -1,11 +1,10 @@
-
 // Import words from seperate js-file
 import words from "./words.js";
 import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
 let currentAttempts = 0;
-const MAX_ATTEMPTS = 2;
+const MAX_ATTEMPTS = 3;
 
 let wordsPlayed = 0;
 const MAX_WORDS = 3;
@@ -98,7 +97,7 @@ function handleRound() {
         alert('That is incorrect!');
         //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
-    } else if (currentAttempts === MAX_ATTEMPTS) {
+    } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
 
@@ -141,11 +140,7 @@ function checkAnswer() {
         changeButtonColor();
     } else {
         handleRound();
-    }
-
-    if (wordsPlayed >= MAX_WORDS + 1) {
-        endGame();
-        document.getElementById('new-word').disabled = true;
+        currentAttempts++;
     }
 }
 
@@ -153,6 +148,8 @@ function checkAnswer() {
 function keepScore() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('score').innerText = ++currentScore;
+
+    
 }
 
 // Function to handle end of game
