@@ -206,61 +206,64 @@ th {
     #hint {
         font-size: 0.9em;
         padding: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.hidden-on-small {
+    display: revert-layer;
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+
+    /* Styles for large screens */
+
+    .logo {
+        padding-top: 1rem;
     }
 
-    .hidden-on-small {
-        display: revert-layer;
+    body {
+        background-image: url('../images/wordscramble_backgr_desktop.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-    /* Media query for large screens */
-    @media screen and (min-width: 1024px) {
-
-        /* Styles for large screens */
-
-        .logo {
-            padding-top: 1rem;
-        }
-
-        body {
-            background-image: url('../images/wordscramble_backgr_desktop.webp');
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .game-area {
-            height: 70vh;
-            max-height: 500px;
-            max-width: 800px;
-            font-size: 1.1em;
-        }
-
-        #input {
-            margin-top: auto;
-        }
-
-        #player-input {
-            font-size: 1.1em;
-        }
-
-        .btn {
-            font-size: 1.1em;
-        }
-
-        #scrambled-word {
-            font-size: 1.4em;
-        }
-
-        #hint {
-            font-size: 1.1em;
-            padding: 25px;
-        }
-
-        #result {
-            font-size: 1.4em;
-        }
-
-        .score-area {
-            font-size: 100%;
-        }
+    .game-area {
+        height: 70vh;
+        max-height: 500px;
+        max-width: 800px;
+        font-size: 1.1em;
     }
+
+    #input {
+        margin-top: auto;
+    }
+
+    #player-input {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 1.1em;
+    }
+
+    #scrambled-word {
+        font-size: 1.4em;
+    }
+
+    #hint {
+        font-size: 1.1em;
+        padding: 25px;
+    }
+
+    #result {
+        font-size: 1.4em;
+    }
+
+    .score-area {
+        font-size: 100%;
+    }
+}
 }
