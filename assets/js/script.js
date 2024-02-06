@@ -56,6 +56,7 @@ function startGame() {
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
     enableCheckButton();
+    resetCheckButtonColor();
 
     currentAttempts = 0;
 
