@@ -108,7 +108,7 @@ function handleRound() {
 
 function changeButtonColor() {
     let button = document.getElementById('new-word');
-    let currentColor = window.getComputedStyle(button).getPropertyValue('--orange');
+    let currentColor = window.getComputedStyle(button).getPropertyValue('--dark-blue');
     let newColor = 'var(--orange)';
 
     if (currentColor === 'var(--orange)') {
@@ -116,6 +116,10 @@ function changeButtonColor() {
     }
     // Check how to write this better
     button.style.backgroundColor = newColor;
+}
+
+function resetCheckButtonColor(){
+    document.getElementById('check-answer').style.backgroundColor = '';
 }
 
 function disableCheckButton(){
@@ -148,6 +152,7 @@ function checkAnswer() {
         document.getElementById('player-input').value = '';
         changeButtonColor();
         disableCheckButton();
+        resetCheckButtonColor();
         currentAttempts = 0;
     } else {
         handleRound();
