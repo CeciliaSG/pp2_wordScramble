@@ -69,8 +69,9 @@ h1 {
 }
 
 #hint {
-    display:none ;
-    margin: auto;
+    font-size: 0.8em;
+    padding: 10px;
+        }
 }
 
 .input {
@@ -136,10 +137,10 @@ h2 {
     font-family: sen, sans-serif;
 }
 
-#leaderboard{
+#leaderboard {
     font-size: 14px;
-    font-family: sen,sans-serif;
-    margin:auto;
+    font-family: sen, sans-serif;
+    margin: auto;
 }
 
 th {
@@ -147,7 +148,7 @@ th {
 }
 
 .hidden-on-small {
-   display: none;
+    display: none;
 }
 
 .score-area {
@@ -204,8 +205,8 @@ th {
     }
 
     .hidden-on-small {
-   display: revert-layer;
-}
+        display: revert-layer;
+    }
 
     /* Media query for large screens */
     @media screen and (min-width: 1024px) {

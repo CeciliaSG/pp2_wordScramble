@@ -19,7 +19,7 @@ document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
 document.getElementById('play-again').addEventListener('click', resetGame);
 
-//Add funtion to generate a random word from the words array
+//Add function to generate a random word from the words array
 
 function generateRandomWordAndHint() {
     let randomIndex = [Math.floor(Math.random() * words.length)];
@@ -33,7 +33,7 @@ function generateRandomWordAndHint() {
 
     originalWord = randomWord;
 
-    console.log('9', randomWord);
+    console.log('1', randomWord);
     console.log(originalWord);
     console.log(randomHint);
 
@@ -60,7 +60,7 @@ function startGame() {
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
     enableCheckButton();
-    resetCheckButtonColor();
+    resetNewWordButtonColor();
 
     currentAttempts = 0;
 
@@ -96,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
     initialiseGame();
 });
 
-
 //Separate function to handle the game in-round/attempts
 
 function handleRound() {
@@ -108,7 +107,7 @@ function handleRound() {
         currentAttempts++;
         document.getElementById('hint').textContent = randomHint;
 
-        console.log('3', randomHint);
+        console.log('!', randomHint);
 
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
@@ -133,7 +132,7 @@ function changeButtonColor() {
 
 /* Function to reset button colour */
 
-function resetCheckButtonColor() {
+function resetNewWordButtonColor() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
 }
 
@@ -151,7 +150,7 @@ function enableCheckButton() {
 
 function checkAnswer() {
 
-    let originalWord = randomWord;
+    originalWord = randomWord;
 
     //Check player input against original word
     // Let player know answer is incorrect 
