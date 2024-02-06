@@ -32,7 +32,7 @@ h1 {
 /* Styles for main game area */
 
 .game-area {
-    background-color: #2DB7ED;
+    background-color: var(--light-blue);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@ h1 {
 }
 
 #hint {
-    display: none;
+    display:none ;
     margin: auto;
 }
 
@@ -120,7 +120,7 @@ h1 {
 }
 
 #play-again {
-    background-color: #2DB7ED;
+    background-color: var(--light-blue);
     color: #192E57;
     font-weight: bold;
     display: none;

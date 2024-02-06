@@ -1,7 +1,6 @@
 // Import words from seperate js-file
 import { words, hints } from "./words.js";
 
-
 import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
@@ -34,7 +33,7 @@ function generateRandomWordAndHint() {
 
     originalWord = randomWord;
 
-    console.log(randomWord);
+    console.log('9', randomWord);
     console.log(originalWord);
     console.log(randomHint);
 
@@ -107,7 +106,8 @@ function handleRound() {
         alert('That is incorrect!');
         //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
-        document.getElementById('hint').innerText = randomHint;
+        document.getElementById('hint').textContent = randomHint;
+
         console.log('3', randomHint);
 
     } else if (currentAttempts >= MAX_ATTEMPTS) {
@@ -121,7 +121,7 @@ function handleRound() {
 
 function changeButtonColor() {
     let button = document.getElementById('new-word');
-    let currentColor = window.getComputedStyle(button).getPropertyValue('var(--orange)');
+    let currentColor = window.getComputedStyle(button).getPropertyValue('background-color');
     let newColor = 'var(--orange)';
 
     /*if(newColor === 'var(--orange)') {
