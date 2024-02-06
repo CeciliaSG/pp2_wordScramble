@@ -95,6 +95,7 @@ function startGame() {
 /* Function to initialise game --> start game */
 
 function initialiseGame() {
+    alert('Ready to play. 3 tries for each word and 30 words in eahc game. ')
     startGame();
 }
 document.addEventListener("DOMContentLoaded", function () {
