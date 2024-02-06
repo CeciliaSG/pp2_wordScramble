@@ -84,7 +84,7 @@ function startGame() {
         document.getElementById('new-word').disabled = true;
 
         /* Play again button */
-        document.getElementById('play-again').innerText = randomHint;
+        document.getElementById('play-again').style.display = 'block';
     }
 }
 
@@ -107,7 +107,7 @@ function handleRound() {
         alert('That is incorrect!');
         //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
-        document.getElementById('hint').innerText.display = block;
+        document.getElementById('hint').innerText = randomHint;
         console.log('3', randomHint);
 
     } else if (currentAttempts >= MAX_ATTEMPTS) {
