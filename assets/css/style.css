@@ -69,7 +69,7 @@ h1 {
 }
 
 #hint {
-    display: block;
+    display: none;
     margin: auto;
 }
 
