@@ -100,7 +100,7 @@ function handleRound() {
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
-
+        document.getElementById('check-answer').disabled = true;
         changeButtonColor();
     }
 }
