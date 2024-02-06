@@ -22,14 +22,18 @@ document.getElementById('play-again').addEventListener('click', resetGame);
 //Add function to generate a random word from the words array
 
 function generateRandomWordAndHint() {
-    let randomIndex = [Math.floor(Math.random() * words.length)];
+    let wordsCopy = [...words];
+    let hintsCopy = [...hints];
 
-    //Remove the used/choosen words from the array so it doesn't load twice
+    let randomIndex = [Math.floor(Math.random() * wordsCopy.length)];
+
+    //Remove the used/choosen words and hints from the array so it doesn't load twice
     //Using the splice method.
 
-    randomWord = words[randomIndex];
-    randomHint = hints[randomIndex];
-    words.splice(randomIndex, 1);
+    randomWord = wordsCopy[randomIndex];
+    randomHint = hintsCopy[randomIndex];
+    wordsCopy.splice(randomIndex, 1);
+    hintsCopy.splice(randomIndex, 1);
 
     originalWord = randomWord;
 
@@ -60,13 +64,14 @@ function startGame() {
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
     enableCheckButton();
-    resetNewWordButtonColor();
+    resetNewWordButton();
 
     currentAttempts = 0;
 
     /* Get a new word only if the game is not over */
     let { word: randomWord, hint: randomHint } = generateRandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
+    document.getElementById('hint').textContent = randomHint;
     console.log('2', randomHint);
 
     //Updating the html with getElement and template literals
@@ -132,8 +137,9 @@ function changeButtonColor() {
 
 /* Function to reset button colour */
 
-function resetNewWordButtonColor() {
+function resetNewWordButton() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
+    document.getElementById('hint').textContent = '';
 }
 
 /* Functions to disable and enable chack answer button */
@@ -151,6 +157,7 @@ function enableCheckButton() {
 function checkAnswer() {
 
     originalWord = randomWord;
+    document.getElementById('hint').textContent = randomHint;
 
     //Check player input against original word
     // Let player know answer is incorrect 
