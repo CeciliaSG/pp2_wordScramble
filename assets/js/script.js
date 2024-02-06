@@ -163,6 +163,7 @@ function resetGame() {
     wordsPlayed = 0;
     currentAttempts = 0;
     document.getElementById('new-word').disabled = false;
+    document.getElementById('new-word').style.background = 'var(--dark-blue)';
     startGame();
 }
 
