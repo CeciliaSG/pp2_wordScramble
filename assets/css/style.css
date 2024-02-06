@@ -4,7 +4,6 @@
     --orange: #da651d;
     --light-blue: #2DB7ED;
     --dark-blue: #192E57;
-
 }
 
 body {
@@ -15,7 +14,6 @@ body {
     color: rgb(245, 244, 242);
     text-align: center;
     height: 100vh;
-
 }
 
 /* Heading styles */
@@ -111,13 +109,6 @@ h1 {
     color: #da651d;
     font-weight: bold;
 }
-
-/*
-.attempts {
-    display: inline-block;
-    margin: 0.5rem;
-    font-size: 80%;
-} */
 
 /* Styles for keep-playing and score area */
 
