@@ -55,6 +55,7 @@ function scrambleWord(word) {
 function startGame() {
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('result').innerText = '';
+    enableCheckButton();
 
     currentAttempts = 0;
 
@@ -97,6 +98,7 @@ function handleRound() {
         alert('That is incorrect!');
         //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
+       
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
@@ -114,6 +116,14 @@ function changeButtonColor() {
     }
     // Check how to write this better
     button.style.backgroundColor = newColor;
+}
+
+function disableCheckButton(){
+    document.getElementById('check-answer').disabled = true;
+}
+
+function enableCheckButton(){
+    document.getElementById('check-answer').disabled = false;
 }
 
 //Checking the players answer by comparing newWord with player input
@@ -137,6 +147,7 @@ function checkAnswer() {
         keepScore();
         document.getElementById('player-input').value = '';
         changeButtonColor();
+        disableCheckButton();
         currentAttempts = 0;
     } else {
         handleRound();
