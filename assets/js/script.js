@@ -111,15 +111,15 @@ function changeButtonColor() {
     let currentColor = window.getComputedStyle(button).getPropertyValue('var(--orange)');
     let newColor = 'var(--orange)';
 
-    if (currentColor === 'var(--orange)') {
-        newColor = '';
-    }
+    /*if(newColor === 'var(--orange)') {
+        currentColor = '';
+    } */
     // Check how to write this better
     button.style.backgroundColor = newColor;
 }
 
 function resetCheckButtonColor(){
-    document.getElementById('new-word').style.backgroundColor = '';
+    document.getElementById('new-word').style.background = 'var(--dark-blue)';
 }
 
 function disableCheckButton(){
