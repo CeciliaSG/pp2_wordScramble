@@ -82,6 +82,8 @@ function startGame() {
     }
 }
 
+/* Function to initialise game --> start game */
+
 function initialiseGame() {
     startGame();
 }
@@ -107,6 +109,8 @@ function handleRound() {
     }
 }
 
+/* Change the colour of the New word button */
+
 function changeButtonColor() {
     let button = document.getElementById('new-word');
     let currentColor = window.getComputedStyle(button).getPropertyValue('var(--orange)');
@@ -119,9 +123,13 @@ function changeButtonColor() {
     button.style.backgroundColor = newColor;
 }
 
+/* Function to reset button colour */
+
 function resetCheckButtonColor(){
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
 }
+
+/* Functions to disable and enable chack answer button */
 
 function disableCheckButton(){
     document.getElementById('check-answer').disabled = true;
@@ -131,7 +139,7 @@ function enableCheckButton(){
     document.getElementById('check-answer').disabled = false;
 }
 
-//Checking the players answer by comparing newWord with player input
+/* Checking the players answer by comparing newWord with player input */
 
 function checkAnswer() {
 
@@ -166,14 +174,15 @@ function keepScore() {
     document.getElementById('score').innerText = ++currentScore;
 }
 
-// Function to handle end of game
+/* Function to handle end of game */
 function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('result').innerText = (`Game End! Your score is: ${currentScore}`);
     console.log("Inside endGame function");
 }
 
-/* Reseting the when it is ended */
+/* Reseting when the game has ended */
+
 function resetGame() {
     document.getElementById('score').innerText = '0';
     wordsPlayed = 0;
