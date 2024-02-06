@@ -114,7 +114,7 @@ function changeButtonColor() {
     if (currentColor === 'var(--orange)') {
         newColor = '';
     }
-
+// Check how to write this better
     button.style.backgroundColor = newColor;
 }
 
@@ -138,6 +138,7 @@ function checkAnswer() {
         //document.getElementById('result').innerText = 'Congratulations, you got it right!';
         keepScore();
         document.getElementById('player-input').value = '';
+        changeButtonColor();
     }else {
         handleRound();
     }

@@ -220,6 +220,8 @@ Disabling and enabling a button; [<https://stackoverflow.com/questions/13831601/
 
 ### Code
 
+Setting colours in css: [https://stackoverflow.com/questions/9436123/javascript-changing-a-class-style/65471649#65471649]
+
 - The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
 
 - [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
