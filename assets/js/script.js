@@ -1,5 +1,7 @@
 // Import words from seperate js-file
-import words from "./words.js";
+import {words, hints} from "./words.js";
+
+
 import { leaderboard } from "./leaderboardData.js";
 
 //Declare variables
