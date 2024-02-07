@@ -137,7 +137,7 @@ function changeButtonColor() {
     let newColor = 'var(--orange)';
 
     // Check how to write this better
-    button.style.backgroundColor = newColor;
+    button.style.background= newColor;
 }
 
 /* Function to reset button colour and hint */
