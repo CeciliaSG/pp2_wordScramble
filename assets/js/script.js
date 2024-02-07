@@ -41,13 +41,14 @@ function generateRandomWordAndHint() {
 
     randomWord = wordsCopy[randomWordIndex];
     randomHint = hintsCopy[randomHintIndex];
+    console.log('1', randomWord);
+    console.log('1', randomHint);
     wordsCopy.splice(randomWordIndex, 1);
     hintsCopy.splice(randomHintIndex, 1);
 
-    console.log('1', randomWord);
-    console.log ('1', randomHint);
+    
 
-    //originalWord = randomWord;
+    originalWord = randomWord;
 
     return { word: randomWord, hint: randomHint };
 }
@@ -193,7 +194,6 @@ function keepScore() {
 function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('game-end').innerText = (`Game End! Your score is: ${currentScore}`);
-    console.log("Inside endGame function");
 }
 
 /* Reseting when the game has ended so a new game can be played */
