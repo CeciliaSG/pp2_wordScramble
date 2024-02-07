@@ -30,6 +30,9 @@ function generateRandomWordAndHint() {
     let randomWordIndex = [Math.floor(Math.random() * wordsCopy.length)];
     let randomHintIndex = [Math.floor(Math.random() * hintsCopy.length)];
 
+    console.log('!', randomWord);
+    console.log('!', randomHint);
+
     //Remove the used/choosen word and correspongind hint from the array so it doesn't load twice
     //Using the splice method.
 
