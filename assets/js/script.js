@@ -119,7 +119,7 @@ function handleRound() {
     }
 }
 
-/* Change the colour of the New word button */
+/* Change the colour of the New word button (adapted from Stackoverflow) */
 function changeButtonColor() {
     let button = document.getElementById('new-word');
     let newColor = 'var(--orange)';
@@ -127,14 +127,14 @@ function changeButtonColor() {
     button.style.background = newColor;
 }
 
-/* Function to reset button colour and hint */
+/* Function to reset button colour and the hint (adapted from Stackoverflow) */
 
 function resetNewWordButton() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
     document.getElementById('hint').textContent = '';
 }
 
-/* Functions to disable and enable check answer button */
+/* Functions to disable and enable check answer button (adapted from Stackoverflow) */
 
 function disableCheckButton() {
     document.getElementById('check-answer').disabled = true;
