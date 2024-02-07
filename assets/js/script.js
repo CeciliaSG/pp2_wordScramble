@@ -97,7 +97,7 @@ function startGame() {
 /* Function to initialise game --> start game */
 
 function initialiseGame() {
-    alert('Ready to play? Three tries for each word and thirty words in each game. How many an you get right? GOOD LUCK ')
+    alert('Ready to play? Three tries for each word and twenty words in each game. How many can you get right? GOOD LUCK ')
     startGame();
 }
 document.addEventListener("DOMContentLoaded", function () {
@@ -142,7 +142,7 @@ function changeButtonColor() {
     button.style.backgroundColor = newColor;
 }
 
-/* Function to reset button colour */
+/* Function to reset button colour and hint */
 
 function resetNewWordButton() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
