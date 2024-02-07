@@ -39,15 +39,11 @@ function generateRandomWordAndHint() {
     //Remove the used/choosen word and correspongind hint from the array so it doesn't load twice
     //Using the splice method.
 
-    let randomWord = wordsCopy[randomIndex];
-    let randomHint = hintsCopy[randomIndex];
-
-    console.log('1', randomWord);
-    console.log('1', randomHint);
+    randomWord = wordsCopy[randomIndex];
+    randomHint = hintsCopy[randomIndex];
 
     wordsCopy.splice(randomIndex, 1);
     hintsCopy.splice(randomIndex, 1);
-
 
     originalWord = randomWord;
 
@@ -104,7 +100,7 @@ function startGame() {
 /* Function to initialise game --> start game */
 
 function initialiseGame() {
-    alert('Ready to play? Two tries for each word and twenty words in each game. How many can you get right? GOOD LUCK ')
+    alert('Ready to play? Two tries for each word and twenty words in each game. How many can you get right? GOOD LUCK ');
     startGame();
 }
 document.addEventListener("DOMContentLoaded", function () {
@@ -124,10 +120,6 @@ function handleRound() {
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         changeButtonColor();
-
-        /* This not working */
-    } else if (currentAttempts >= MAX_ATTEMPTS && wordsPlayed >= MAX_WORDS){
-        endGame();
     }
 }
 
@@ -137,7 +129,7 @@ function changeButtonColor() {
     let newColor = 'var(--orange)';
 
     // Check how to write this better
-    button.style.background= newColor;
+    button.style.background = newColor;
 }
 
 /* Function to reset button colour and hint */
@@ -160,8 +152,6 @@ function enableCheckButton() {
 /* Checking the players answer by comparing newWord with player input */
 
 function checkAnswer() {
-
-    originalWord = randomWord;
     document.getElementById('hint').textContent = randomHint;
 
     //Check player input against original word
