@@ -49,7 +49,7 @@ Each game consists of 20 words.
 
 - #### Imagery
 
-  - Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+  - The background image has been added to give the site more of a game feeling.
 
 - ### Wireframes
 
@@ -63,7 +63,7 @@ Each game consists of 20 words.
 
 - Responsive on all device sizes
 
-- Interactive elements
+- Interactive elements: buttons and input field.
 
 ## Technologies Used
 
@@ -215,31 +215,33 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Credits
 
-I used this walkthrough to get an understanding of how to build the game: [https://www.youtube.com/watch?v=2wJKJRa9ncI]
-But I've made a simpler game.
-I also used this, to get me started: [https://www.geeksforgeeks.org/word-scramble-game-using-javascript/]
-Fisher Yates shuffle was used to shuffle the letters in the words: [<https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle>]
-This war Card game helped me understand how to import ny word array from a seperate js-file:
-[<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
-This post on stackoverflow, as well as going back over the course material helped me get started with the leaderboard: [<https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard>]
-The Love Maths walkthrough was used to guide in building the word scramble game.
-Disabling and enabling a button; [<https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737#13831737>]
+- This post on stackoverflow, as well as going back over the course material helped me get started with the leaderboard: [<https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard>]
+- The Love Maths walkthrough was used to guide me in building the word scramble game.
 
+
+- My mentor helped me figure out the problem with splice when generating random words from the array. The code I had written wasn't doing what I wanted. He also suggested setting the main colours in css so as to make the code easier to maintain.
 
 
 ### Code
 
-Setting colours in css: [https://stackoverflow.com/questions/9436123/javascript-changing-a-class-style/65471649#65471649]
-
-- The full-screen hero image code came from this [StackOverflow post](https://stackoverflow.com)
-
-- [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+- I used this walkthrough to get an understanding of how to build the game: [https://www.youtube.com/watch?v=2wJKJRa9ncI] But I've created a simpler game.
+- I also used this, to get me started: [https://www.geeksforgeeks.org/word-scramble-game-using-javascript/]
+- Fisher Yates shuffle was used to shuffle the letters in the words: [<https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle>]
+- Setting colours in css: [https://stackoverflow.com/questions/9436123/javascript-changing-a-class-style/65471649#65471649](https://stackoverflow.com)
+- Disabling and enabling a button; [<https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737#13831737>] (<https://stackoverflow.com>)
+- Changing button colour with Javascript: [https://stackoverflow.com/search?q=change+html-button+color+with+javascript]
+- This war Card game helped me understand how to import ny word array from a seperate js-file:
+[<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
 
 - [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
 
 ### Content
 
+- The background image came from: [https://www.freepik.com/free-photo/top-view-alphabet-letters-with-copy-space-education-day_21745455.htm#page=3&query=letters%20scramble&position=25&from_view=search&track=ais&uuid=515a01ec-32ab-4c23-9bd6-e4992ad9ee0c] and was than adapted using photoshop.
+
 - The words array was generated with the help of AI.
+
+- The logo was created by my husband.
 
 ### Media
 
