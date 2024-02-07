@@ -36,6 +36,8 @@ function generateRandomWordAndHint() {
     wordsCopy.splice(randomWordIndex, 1);
     hintsCopy.splice(randomHintIndex, 1);
 
+    console.log ('1', randomHint);
+
     originalWord = randomWord;
 
     return { word: randomWord, hint: randomHint };
