@@ -124,7 +124,6 @@ function changeButtonColor() {
     let button = document.getElementById('new-word');
     let newColor = 'var(--orange)';
 
-    // Check how to write this better
     button.style.background = newColor;
 }
 
@@ -145,7 +144,7 @@ function enableCheckButton() {
     document.getElementById('check-answer').disabled = false;
 }
 
-/* Checking the players answer by comparing newWord with player input */
+/* Checking the players answer by comparing newWord with player input(Adapted from Love Maths and www.geeksforgeeks.org) */
 
 function checkAnswer() {
     document.getElementById('hint').textContent = randomHint;
@@ -169,7 +168,7 @@ function checkAnswer() {
     }
 }
 
-/* Gets the currect score from the DOM and increments it */
+/* Gets the currect score from the DOM and increments it (Adapted from Love Maths) */
 function keepScore() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('score').innerText = ++currentScore;
