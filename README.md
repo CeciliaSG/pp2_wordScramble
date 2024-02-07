@@ -226,6 +226,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - Setting colours in css: [https://stackoverflow.com/questions/9436123/javascript-changing-a-class-style/65471649#65471649](https://stackoverflow.com)
 - Disabling and enabling a button; [<https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737#13831737>] (<https://stackoverflow.com>)
 - Changing button colour with Javascript: [https://stackoverflow.com/search?q=change+html-button+color+with+javascript]
+- Using a copy of an array in javascript/spread operator: [https://www.geeksforgeeks.org/copy-array-items-into-another-array-in-javascript/#approaches-1-using-the-spread-operator-]
+- Hiding buttons with Javascript: [https://stackoverflow.com/questions/18068773/is-it-possible-to-show-hide-a-button-on-a-webpage-when-a-users-javascript-is-tu]
 - This war Card game helped me understand how to import ny word array from a seperate js-file:
 [<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
 

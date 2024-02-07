@@ -134,7 +134,7 @@ function resetNewWordButton() {
     document.getElementById('hint').textContent = '';
 }
 
-/* Functions to disable and enable chack answer button */
+/* Functions to disable and enable check answer button */
 
 function disableCheckButton() {
     document.getElementById('check-answer').disabled = true;
