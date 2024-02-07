@@ -60,7 +60,7 @@ function scrambleWord(word) {
     return characters.join('');
 }
 
-// Function to start game, calling generateRandomWordAndHint() and scrambleWord(). 
+// Function to start game 
 
 function startGame() {
     /* Hiding play-again button */
@@ -174,7 +174,7 @@ function keepScore() {
     document.getElementById('score').innerText = ++currentScore;
 }
 
-/* Function to handle end of game */
+/* Function to handle end of game (adapted from above function) */
 function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('game-end').innerText = (`Game End! Your score is: ${currentScore}`);
