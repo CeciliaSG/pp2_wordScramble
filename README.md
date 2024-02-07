@@ -217,8 +217,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - This post on stackoverflow, as well as going back over the course material helped me get started with the leaderboard: [<https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard>]
 - The Love Maths walkthrough was used to guide me in building the word scramble game.
-
-
 - My mentor helped me figure out the problem with splice when generating random words from the array. The code I had written wasn't doing what I wanted. He also suggested setting the main colours in css so as to make the code easier to maintain.
 
 
