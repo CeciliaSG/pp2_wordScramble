@@ -25,9 +25,6 @@ function generateRandomWordAndHint() {
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
-    console.log("Original words:", wordsCopy);
-    console.log("Original hints:", hintsCopy);
-
     /* Generating a random word and hint from the array */
 
     let randomIndex = [Math.floor(Math.random() * wordsCopy.length)];
