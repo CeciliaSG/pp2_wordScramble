@@ -220,6 +220,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - I used this walkthrough to get an understanding of how to build the game: [https://www.youtube.com/watch?v=2wJKJRa9ncI] But I've created a simpler game.
 - I also used this, to get me started: [https://www.geeksforgeeks.org/word-scramble-game-using-javascript/]
+- Generating a random word: [https://stackoverflow.com/questions/48271510/how-do-i-get-a-random-word-of-a-certain-length-from-an-array]
 - Scrambling a word: [<https://stackoverflow.com/questions/73417426/what-did-i-do-wrong-in-this-javascript-code>]
 - Fisher Yates shuffle was used to shuffle the letters in the words: [<https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle>]
 - Setting colours in css: [https://stackoverflow.com/questions/9436123/javascript-changing-a-class-style/65471649#65471649](https://stackoverflow.com)
