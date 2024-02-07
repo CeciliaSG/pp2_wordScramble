@@ -115,7 +115,6 @@ function handleRound() {
         currentAttempts++;
         document.getElementById('hint').textContent = randomHint;
 
-        console.log('!', randomHint);
 
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);

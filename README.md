@@ -2,15 +2,13 @@
 
 [View the live project here.](https://ceciliasg.github.io/pp2_wordScramble/)
 
-
 A game for those wanting to test their word skills.
 
 When the page loads a word is already cued up for the players first guess. The player has two attempts for each word, after the second attempt the solution is revealed, and the new button changes colour to prompt them to get a new word.
 
-They player provides their answer in the input field and clicks check answer to see if they got it right. If they want to move on to a new word they just click the NewWord button. 
+They player provides their answer in the input field and clicks check answer to see if they got it right. If they want to move on to a new word they just click the NewWord button.
 
-Each game consists of 20 words. 
-
+Each game consists of 20 words.
 
 <h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
 
@@ -41,23 +39,21 @@ Each game consists of 20 words.
 
 - #### Colour Scheme
 
-  - The three main colours used are light-blue, dark blue and orange.
+  - The three main colours used are: light-blue, dark blue and orange.
 
 - #### Typography
 
-  - The Sen font is the main and only font used throughout the game, with Sans Serif as the fallback font in case for any reason the font isn't being imported correctly. Sen works well for this game. It's clean and easily readilable.
+- The Sen font is the main and only font used throughout the game, with Sans Serif as the fallback font in case for any reason the font isn't being imported correctly. Sen works well for this game. It's clean and easily readable.
 
 - #### Imagery
 
-  - The background image has been added to give the site more of a game feeling.
+  - The background image and custom logo has been added to give the site more of a game feeling.
 
 - ### Wireframes
 
-  - Home Page Wireframe - [View](https://github.com/)
+  - Home Page Wireframe - [View](documentation/Wireframe.png)
 
-  - Mobile Wireframe - [View](https://github.com/)
-
-  - Contact Us Page Wireframe - [View](https://github.com/)
+  - Pseudo code - [View](documentation/Pseudo code.png)
 
 ## Features
 
@@ -71,22 +67,20 @@ Each game consists of 20 words.
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Hover.css:](https://ianlunn.github.io/Hover/)
-    - Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-2. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-3. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-4. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-5. [GitHub:](https://github.com/)
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Sen' font into the index.html file which is used throughout the project.
+2. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to CodeAnywhere and Push to GitHub.
+3. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-6. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
+4. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
     - Photoshop was used to create the logo, resizing images and editing photos for the website.
-7.
+5. [Cloudconvert:](https://cloudconvert.com)
+    - Cloud convert was used to convert images to webp.
 
 ## Testing
 
@@ -218,7 +212,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - This post on stackoverflow, as well as going back over the course material helped me get started with the leaderboard: [<https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard>]
 - The Love Maths walkthrough was used to guide me in building the word scramble game.
 - My mentor helped me figure out the problem with splice when generating random words from the array. The code I had written wasn't doing what I wanted. He also suggested setting the main colours in css so as to make the code easier to maintain.
-
 
 ### Code
 
