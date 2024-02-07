@@ -57,9 +57,9 @@ Each game consists of 20 words.
 
 ## Features
 
-- Responsive on all device sizes
+- Responsive on all device sizes.
 
-- Interactive elements: buttons and input field.
+- Interactive elements: buttons and  an input field for player input.
 
 ## Technologies Used
 
@@ -229,16 +229,14 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - Changing button colour with Javascript: [https://stackoverflow.com/search?q=change+html-button+color+with+javascript]
 - Using a copy of an array in javascript/spread operator: [https://www.geeksforgeeks.org/copy-array-items-into-another-array-in-javascript/#approaches-1-using-the-spread-operator-]
 - Hiding buttons with Javascript: [https://stackoverflow.com/questions/18068773/is-it-possible-to-show-hide-a-button-on-a-webpage-when-a-users-javascript-is-tu]
-- This war Card game helped me understand how to import ny word array from a seperate js-file:
+- This war Card game helped me understand how to import new word array from a seperate js-file:
 [<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
-
-- [MDN Web Docs](https://developer.mozilla.org/) : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found [Here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel#Pattern_validation)
 
 ### Content
 
 - The background image came from: [https://www.freepik.com/free-photo/top-view-alphabet-letters-with-copy-space-education-day_21745455.htm#page=3&query=letters%20scramble&position=25&from_view=search&track=ais&uuid=515a01ec-32ab-4c23-9bd6-e4992ad9ee0c] and was than adapted using photoshop.
 
-- The words array was generated with the help of AI.
+- The words and hints arrays were generated with the help of AI.
 
 - The logo was created by my husband.
 
