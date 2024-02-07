@@ -21,7 +21,7 @@ document.getElementById('play-again').addEventListener('click', resetGame);
 
 function generateRandomWordAndHint() {
 
-    /* Copies of the arrays */
+    /* Copy of the arrays */
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
@@ -107,7 +107,6 @@ function handleRound() {
         currentAttempts++;
         document.getElementById('hint').textContent = randomHint;
 
-
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         changeButtonColor();
@@ -157,9 +156,6 @@ function checkAnswer() {
     //Provide correct answer on third attempt
     let playerInput = document.getElementById('player-input').value.toLowerCase();
     let isCorrect = playerInput === originalWord.toLowerCase();
-
-    console.log(originalWord);
-    console.log(playerInput);
 
     if (isCorrect) {
         alert('Congratulations, you got it right!');
