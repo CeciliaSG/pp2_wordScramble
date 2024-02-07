@@ -5,7 +5,7 @@ import { words, hints } from "./words.js";
 
 //Declare variables
 let currentAttempts = 0;
-const MAX_ATTEMPTS = 3;
+const MAX_ATTEMPTS = 2;
 
 let wordsPlayed = 0;
 const MAX_WORDS = 3;
@@ -93,7 +93,7 @@ function startGame() {
 /* Function to initialise game --> start game */
 
 function initialiseGame() {
-    alert('Ready to play? Three tries for each word and twenty words in each game. How many can you get right? GOOD LUCK ')
+    alert('Ready to play? Two tries for each word and twenty words in each game. How many can you get right? GOOD LUCK ')
     startGame();
 }
 document.addEventListener("DOMContentLoaded", function () {
