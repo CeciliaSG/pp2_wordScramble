@@ -96,6 +96,7 @@ h1 {
 #new-word {
     background-color: var(--dark-blue);
     color: white;
+    margin: 10px;
 }
 
 .btn:hover {

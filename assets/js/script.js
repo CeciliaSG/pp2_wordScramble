@@ -25,6 +25,8 @@ function generateRandomWordAndHint() {
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
+    /* Generating a random word and hint from the array */
+
     let randomWordIndex = [Math.floor(Math.random() * wordsCopy.length)];
     let randomHintIndex = [Math.floor(Math.random() * hintsCopy.length)];
 
@@ -36,6 +38,7 @@ function generateRandomWordAndHint() {
     wordsCopy.splice(randomWordIndex, 1);
     hintsCopy.splice(randomHintIndex, 1);
 
+    console.log('1', randomWord);
     console.log ('1', randomHint);
 
     originalWord = randomWord;
@@ -71,6 +74,9 @@ function startGame() {
     /* Get a new word only if the game is not over */
     let { word: randomWord, hint: randomHint } = generateRandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
+
+    console.log ('2', randomWord);
+    console.log('2', randomHint);
 
     //Updating the html with generated word with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
@@ -120,7 +126,6 @@ function handleRound() {
 }
 
 /* Change the colour of the New word button */
-
 function changeButtonColor() {
     let button = document.getElementById('new-word');
     let newColor = 'var(--orange)';
@@ -185,8 +190,7 @@ function endGame() {
     console.log("Inside endGame function");
 }
 
-/* Reseting when the game has ended */
-
+/* Reseting when the game has ended so a new game can be played */
 function resetGame() {
     document.getElementById('score').innerText = '0';
     wordsPlayed = 0;
