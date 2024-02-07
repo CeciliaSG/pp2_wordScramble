@@ -40,10 +40,6 @@ function generateRandomWordAndHint() {
 
     originalWord = randomWord;
 
-    console.log('1', randomWord);
-    console.log(originalWord);
-    console.log('1', randomHint);
-
     return { word: randomWord, hint: randomHint };
 }
 
@@ -111,14 +107,12 @@ function handleRound() {
 
     if (currentAttempts < MAX_ATTEMPTS) {
         alert('That is incorrect!');
-        //document.getElementById('result').innerText = 'That is incorrect!';
         currentAttempts++;
         document.getElementById('hint').textContent = randomHint;
 
 
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
-        // document.getElementById('result').innerText = `Incorrect! The correct answer is: ${originalWord}`;
         changeButtonColor();
 
         /* This not working */
@@ -131,12 +125,8 @@ function handleRound() {
 
 function changeButtonColor() {
     let button = document.getElementById('new-word');
-    //let currentColor = window.getComputedStyle(button).getPropertyValue('background-color');
     let newColor = 'var(--orange)';
 
-    /*if(newColor === 'var(--orange)') {
-        currentColor = '';
-    } */
     // Check how to write this better
     button.style.backgroundColor = newColor;
 }

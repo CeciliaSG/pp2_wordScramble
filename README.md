@@ -84,10 +84,13 @@ Each game consists of 20 words.
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+I manually tested the site/game throughout the development of this project by testing the functions and using chrome developer tools to test for responsiveness, positioning etc. I also used the dev tools to help identify issues and problems in my Javascript - and mainly used console.logs to find and resolve the issues
+
+The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the page and the game functions.
 
 - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+- [JS Hint Validator](https://jshint.com/)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -217,6 +220,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - I used this walkthrough to get an understanding of how to build the game: [https://www.youtube.com/watch?v=2wJKJRa9ncI] But I've created a simpler game.
 - I also used this, to get me started: [https://www.geeksforgeeks.org/word-scramble-game-using-javascript/]
+- Scrambling a word: [<https://stackoverflow.com/questions/73417426/what-did-i-do-wrong-in-this-javascript-code>]
 - Fisher Yates shuffle was used to shuffle the letters in the words: [<https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle>]
 - Setting colours in css: [https://stackoverflow.com/questions/9436123/javascript-changing-a-class-style/65471649#65471649](https://stackoverflow.com)
 - Disabling and enabling a button; [<https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737#13831737>] (<https://stackoverflow.com>)
