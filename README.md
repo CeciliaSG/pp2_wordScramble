@@ -89,7 +89,7 @@ I manually tested the site/game throughout the development of this project by te
 The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the page and the game functions.
 
 - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F)
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 - [JS Hint Validator](https://jshint.com/)
 
 ### Testing User Stories from User Experience (UX) Section
