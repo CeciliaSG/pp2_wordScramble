@@ -25,13 +25,16 @@ function generateRandomWordAndHint() {
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
+    console.log("Original words:", wordsCopy);
+    console.log("Original hints:", hintsCopy);
+
     /* Generating a random word and hint from the array */
 
-    let randomWordIndex = [Math.floor(Math.random() * wordsCopy.length)];
-    let randomHintIndex = [Math.floor(Math.random() * hintsCopy.length)];
+    let randomWordIndex = Math.floor(Math.random() * wordsCopy.length);
+    let randomHintIndex = Math.floor(Math.random() * hintsCopy.length);
 
-    console.log('!', randomWord);
-    console.log('!', randomHint);
+    console.log("Word index:", randomWordIndex);
+    console.log("Hint index:", randomHintIndex);
 
     //Remove the used/choosen word and correspongind hint from the array so it doesn't load twice
     //Using the splice method.
@@ -44,7 +47,7 @@ function generateRandomWordAndHint() {
     console.log('1', randomWord);
     console.log ('1', randomHint);
 
-    originalWord = randomWord;
+    //originalWord = randomWord;
 
     return { word: randomWord, hint: randomHint };
 }

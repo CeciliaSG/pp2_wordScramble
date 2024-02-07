@@ -103,7 +103,7 @@ h1 {
     border: 2px solid var(--orange);
 }
 
-#result {
+#game-end {
     margin: 40px;
     color: var(--orange);
     font-weight: bold;
