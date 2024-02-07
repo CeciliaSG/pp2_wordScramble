@@ -1,8 +1,16 @@
-<h1 align="center">Code Institute Website</h1>
+<h1 align="center">Word Scramble</h1>
 
-[View the live project here.](https://codeinstitute.net)
+[View the live project here.](https://ceciliasg.github.io/pp2_wordScramble/)
 
-This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
+
+A game for those wanting to test their word skills.
+
+When the page loads a word is already cued up for the players first guess. The player has two attempts for each word, after the second attempt the solution is revealed, and the new button changes colour to prompt them to get a new word.
+
+They player provides their answer in the input field and clicks check answer to see if they got it right. If they want to move on to a new word they just click the NewWord button. 
+
+Each game consists of 20 words. 
+
 
 <h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
 
@@ -12,31 +20,32 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 - #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        1. As a First Time Visitor, I want to easily understand what the game is about and how to play.
+        2. As a First Time Visitor, I like playing word games and testing my word skills.
 
 - #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find information about coding challenges.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find community links.
+        1. As a Returning Visitor, I like playing word games and testing my word skills.
+        2. As a Returning Visitor, 
+        3. As a Returning Visitor, 
 
 - #### Frequent User Goals
 
-        1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-        2. As a Frequent User, I want to check to see if there are any new blog posts.
-        3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
+        1. As a Frequent User, I want to check to see if there are new words to try my skills at.
+        2. As a Frequent User, 
+        3. As a Frequent User, 
 
 - ### Design
 
+- The design is simple and clean making it easy for the user to quickly understand how to play, where to input their answer and how to check it is correct.
+
 - #### Colour Scheme
 
-  - The two main colours used are Code Insititue red, and white.
+  - The three main colours used are light-blue, dark blue and orange.
 
 - #### Typography
 
-  - The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+  - The Sen font is the main and only font used throughout the game, with Sans Serif as the fallback font in case for any reason the font isn't being imported correctly. Sen works well for this game. It's clean and easily readilable.
 
 - #### Imagery
 
