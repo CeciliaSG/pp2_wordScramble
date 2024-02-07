@@ -19,9 +19,8 @@ document.getElementById('play-again').addEventListener('click', resetGame);
 
 /* Add function to generate a random word and corresponding hint from the words array */
 
-function generateRandomWordAndHint() {
+function RandomWordAndHint() {
 
-    /* Copy of the arrays */
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
@@ -73,7 +72,7 @@ function startGame() {
     currentAttempts = 0;
 
     /* Get a new word only if the game is not over */
-    let { word: randomWord, hint: randomHint } = generateRandomWordAndHint();
+    let { word: randomWord } = RandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
 
 
