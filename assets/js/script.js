@@ -1,8 +1,6 @@
 // Import words and hints from seperate js-file
 import { words, hints } from "./words.js";
 
-//import { leaderboard } from "./leaderboardData.js";
-
 //Declare variables
 let currentAttempts = 0;
 const MAX_ATTEMPTS = 2;
@@ -61,7 +59,7 @@ function scrambleWord(word) {
 
 function startGame() {
     document.getElementById('play-again').style.display = 'none';
-    document.getElementById('result').innerText = '';
+    document.getElementById('game-end').innerText = '';
     enableCheckButton();
     resetNewWordButton();
 
@@ -70,7 +68,6 @@ function startGame() {
     /* Get a new word only if the game is not over */
     let { word: randomWord, hint: randomHint } = generateRandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
-    console.log('2', randomHint);
 
     //Updating the html with gnerated word with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
@@ -166,7 +163,6 @@ function checkAnswer() {
 
     if (isCorrect) {
         alert('Congratulations, you got it right!');
-        //document.getElementById('result').innerText = 'Congratulations, you got it right!';
         keepScore();
         document.getElementById('player-input').value = '';
         changeButtonColor();
@@ -187,7 +183,7 @@ function keepScore() {
 /* Function to handle end of game */
 function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
-    document.getElementById('result').innerText = (`Game End! Your score is: ${currentScore}`);
+    document.getElementById('game-end').innerText = (`Game End! Your score is: ${currentScore}`);
     console.log("Inside endGame function");
 }
 
@@ -201,28 +197,3 @@ function resetGame() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
     startGame();
 }
-
-/* Leaderboard */
-function displayLeaderboard(data) {
-    let table = document.getElementById('leaderboardBody');
-
-    table.innerHTML = '';
-
-    for (let i = 0; i < data.length; i++) {
-        let row = `<tr>
-        <th>${data[i].name}</th>
-         <th>${data[i].score}</th>
-         </tr>`;
-
-        table.innerHTML += row;
-    }
-}
-displayLeaderboard(leaderboard);
-
-function addPlayerToLeaderBoard(playerName, initialsScore = 0) {
-    leaderboard.push({ name: playerName, score: initialsScore });
-}
-
-addPlayerToLeaderBoard('NewPlayer', 30);
-
-console.log(leaderboard);
