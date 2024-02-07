@@ -8,6 +8,7 @@
 
 body {
     background-image: url('../images/wordscramble_mobile.webp');
+    background-color: var(--light-blue);
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sen, sans-serif;
@@ -87,7 +88,7 @@ h1 {
 
 .btn {
     padding: 10px;
-    color: #192E57;
+    color: var(--dark-blue);
     border: none;
     border-radius: 100px;
     font-family: sen, sans-serif;
@@ -96,24 +97,24 @@ h1 {
 
 #check-answer,
 #new-word {
-    background-color: #192E57;
+    background-color: var(--dark-blue);
     color: white;
 }
 
 .btn:hover {
-    border: 2px solid #da651d;
+    border: 2px solid var(--orange);
 }
 
 #result {
     margin: 40px;
-    color: #da651d;
+    color: var(--orange);
     font-weight: bold;
 }
 
 /* Styles for keep-playing and score area */
 
 .keep-playing {
-    background-color: #192E57;
+    background-color: var(--dark-blue);
     font-family: sen, sans-serif;
     padding: 1rem;
     margin-top: auto;
@@ -121,7 +122,7 @@ h1 {
 
 #play-again {
     background-color: var(--light-blue);
-    color: #192E57;
+    color: var(--dark-blue);
     font-weight: bold;
     display: none;
     margin: 0 auto;
@@ -168,13 +169,13 @@ th {
 
 #score {
     padding-left: 5px;
-    color: #da651d;
+    color: var(--orange);
     font-family: sen, sans-serif;
     font-weight: bold;
 }
 
 .out-of {
-    color: #da651d;
+    color: var(--orange);
     font-family: sen, sans-serif;
     font-weight: bold;
 }
