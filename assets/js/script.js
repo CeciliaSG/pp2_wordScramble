@@ -58,6 +58,7 @@ function scrambleWord(word) {
 // Function to start game, calling generateRandomWordAndHint() and scrambleWord(). 
 
 function startGame() {
+    /* Hiding play-again button */
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('game-end').innerText = '';
     enableCheckButton();
@@ -69,20 +70,19 @@ function startGame() {
     let { word: randomWord, hint: randomHint } = generateRandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
 
-    //Updating the html with gnerated word with getElement and template literals
+    //Updating the html with generated word with getElement and template literals
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
 
     /* Incrementing the words played */
     wordsPlayed++;
 
     /* If the words played has reached the maxno. */
-
     if (wordsPlayed > MAX_WORDS) {
         endGame();
 
         document.getElementById('new-word').disabled = true;
 
-        /* Play again button */
+        /* Displaying play again button after game has ended */
         document.getElementById('play-again').style.display = 'block';
     }
 }
@@ -153,7 +153,7 @@ function checkAnswer() {
 
     //Check player input against original word
     // Let player know answer is incorrect 
-    //Provide correct answer on third attempt
+    //Provide correct answer on second attempt
     let playerInput = document.getElementById('player-input').value.toLowerCase();
     let isCorrect = playerInput === originalWord.toLowerCase();
 

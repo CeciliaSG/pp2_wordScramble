@@ -155,28 +155,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Styles for leaderboard */
-
-h2 {
-    font-size: 80%;
-    font-weight: 100;
-    font-family: sen, sans-serif;
-}
-
-#leaderboard {
-    font-size: 14px;
-    font-family: sen, sans-serif;
-    margin: auto;
-}
-
-th {
-    font-weight: 100;
-}
-
-.hidden-on-small {
-    display: none;
-}
-
 
 /* Media query for medium screens */
 @media screen and (min-width: 768px) {
