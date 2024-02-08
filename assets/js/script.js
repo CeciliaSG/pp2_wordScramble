@@ -126,7 +126,7 @@ function handleRound() {
 function changeButtonColor() {
     let button = document.getElementById('new-word');
     let newColor = 'var(--orange)';
-    let textColor = '#000000';
+    let textColor = 'var(--dark-blue)';
 
     button.style.background = newColor;
     button.style.color = textColor; 
