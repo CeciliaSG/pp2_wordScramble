@@ -2,7 +2,7 @@
 
 [View the live project here.](https://ceciliasg.github.io/pp2_wordScramble/)
 
-A game for those wanting to test their word skills.
+A GAKE FOR THOSE WANTING TO TEST THEIR WORD SKILLS.
 
 When the page loads a word is already cued up for the players first guess. The player has two attempts for each word, after the second attempt the solution is revealed, and the new button changes colour to prompt them to get a new word.
 
@@ -64,7 +64,6 @@ Each game consists of 20 words.
 - Button colour change to promps player to get new word: <h2 align="center"><img src="documentation/prompting_newword.png"></h2>
 - End of the game, revealing the button to play-again: <h2 align="center"><img src="documentation/game_end.png"></h2>
 
-
 ## Technologies Used
 
 ### Languages Used
@@ -93,11 +92,10 @@ I manually tested the site/game throughout the development of this project by te
 Result of manual testing:
 | Feature | Description | Testing | Result |
 | ----------- | ----------- | ----------- | ----------- |
-| Button  | check-answer| Button ws clicked twice for an incorrect input and once for a correct input.  | the correct alerts are displayed and the clue is displayed after the first incorrect attempt, and the answer is revealed after the second incorrect attempt - when the newword button also changes colour to prompt the player to get a new word. The happens for a correct word. |
-| Button | new-word | | |
-| Button | play-again | | |
-| Input-field | player-answer |A word was inputed and the check anser button clicked |  |
-
+| Button  | check-answer| Button was clicked twice for an incorrect input and once for a correct input.  | The correct alerts are displayed and the clue is displayed (correct clue is displayed) after the first incorrect attempt, and the answer is revealed after the second incorrect attempt - when the newword button also changes colour to prompt the player to get a new word. The happens for a correct word. |
+| Button | new-word |was clicked  | A new word generates when button is cklicked |
+| Button | play-again | was clicked | The game ends when the maximum number of words for a game has been reached. The game is reset and begins again when the button is clicked. |
+| Input-field | player-answer |A word was inputed and the check answer button clicked. The word is checked against the original answer and an alert is returned. |  |
 
 The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the page and the game functions.
 
@@ -176,7 +174,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-- I used this walkthrough to get an understanding of how to build a word scramble game: [https://www.youtube.com/watch?v=2wJKJRa9ncI] 
+- I used this walkthrough to get an understanding of how to build a word scramble game: [https://www.youtube.com/watch?v=2wJKJRa9ncI]
 - I also used this, to get me started: [https://www.geeksforgeeks.org/word-scramble-game-using-javascript/]
 - Generating a random word: [https://stackoverflow.com/questions/48271510/how-do-i-get-a-random-word-of-a-certain-length-from-an-array](https://stackoverflow.com)
 - Scrambling a word: [<https://stackoverflow.com/questions/73417426/what-did-i-do-wrong-in-this-javascript-code>](https://stackoverflow.com)
