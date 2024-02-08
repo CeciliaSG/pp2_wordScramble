@@ -15,7 +15,7 @@ let originalWord;
 let randomWord;
 let randomHint;
 
-//EventListeners
+//EventListeners for buttons
 document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
 document.getElementById('play-again').addEventListener('click', resetGame);
@@ -27,10 +27,9 @@ function RandomWordAndHint() {
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
-    /* Generating a random word and hint from the array */
+    /* Generating a random word and hint from the arrays */
 
     let randomIndex = [Math.floor(Math.random() * wordsCopy.length)];
-    //let randomHintIndex = [Math.floor(Math.random() * hintsCopy.length)];
 
     console.log("Word index:", randomIndex);
     console.log("Hint index:", randomIndex);
@@ -122,7 +121,7 @@ function handleRound() {
     }
 }
 
-/* Change the colour of the New word button (adapted from Stackoverflow) */
+/* Change the colour of the New word button (adapted from Stackoverflow, ref. in README) */
 function changeButtonColor() {
     let button = document.getElementById('new-word');
     let newColor = 'var(--orange)';
@@ -130,14 +129,14 @@ function changeButtonColor() {
     button.style.background = newColor;
 }
 
-/* Function to reset button colour and the hint (adapted from Stackoverflow) */
+/* Function to reset button colour and the hint (adapted from Stackoverflow, ref. in README) */
 
 function resetNewWordButton() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
     document.getElementById('hint').textContent = '';
 }
 
-/* Functions to disable and enable check answer button (adapted from Stackoverflow) */
+/* Functions to disable and enable check answer button (adapted from Stackoverflow, ref. in README) */
 
 function disableCheckButton() {
     document.getElementById('check-answer').disabled = true;
@@ -153,7 +152,7 @@ function checkAnswer() {
     document.getElementById('hint').textContent = randomHint;
 
     //Check player input against original word
-    // Let player know answer is incorrect 
+    // Let player know answer is correct, else back to handleRound()
     //Provide correct answer on second attempt
     let playerInput = document.getElementById('player-input').value.toLowerCase();
     let isCorrect = playerInput === originalWord.toLowerCase();
