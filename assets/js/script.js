@@ -16,8 +16,8 @@ let randomWord;
 let randomHint;
 
 
-
-/* Function to generate a random word and corresponding hint from the words array */
+/* Function to generate a random word and 
+*corresponding hint from the words array */
 
 function RandomWordAndHint() {
 
@@ -32,8 +32,9 @@ function RandomWordAndHint() {
     console.log("Word index:", randomIndex);
     console.log("Hint index:", randomIndex);
 
-    //Remove the used/choosen word and correspongind hint from the array so it doesn't load twice
-    //Using the splice
+    /* Remove the used/choosen word and correspongind hint 
+    *from the array so it doesn't load twice
+    /* Using the splice */
 
     randomWord = wordsCopy[randomIndex];
     randomHint = hintsCopy[randomIndex];
@@ -76,7 +77,8 @@ function startGame() {
     let scrambledWord = scrambleWord(randomWord);
 
 
-    //Updating the html with generated word with getElement and template literals
+    /* Updating the html with generated word with 
+    *getElement and template literals */
     document.getElementById('scrambled-word').innerText = `${scrambledWord}`;
 
     /* Incrementing the words played */
@@ -107,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initialiseGame();
 });
 
-//Separate function to handle the game in-round/attempts
+/* Separate function to handle the game in-round/attempts */
 
 function handleRound() {
     document.getElementById('player-input').value = '';
@@ -123,7 +125,8 @@ function handleRound() {
     }
 }
 
-/* Change the colour of the New word button (adapted from Stackoverflow, ref. in README) */
+/* Change the colour of the New word button 
+*(adapted from Stackoverflow, ref. in README) */
 function changeButtonColor() {
     let button = document.getElementById('new-word');
     let newColor = 'var(--orange)';
@@ -133,7 +136,8 @@ function changeButtonColor() {
     button.style.color = textColor; 
 }
 
-/* Function to reset button colour and the hint (adapted from Stackoverflow, ref. in README) */
+/* Function to reset button colour and the hint 
+*(adapted from Stackoverflow, ref. in README) */
 
 function resetNewWordButton() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
@@ -141,7 +145,8 @@ function resetNewWordButton() {
     document.getElementById('hint').textContent = '';
 }
 
-/* Functions to disable and enable check answer button (adapted from Stackoverflow, ref. in README) */
+/* Functions to disable and enable check answer button 
+*(adapted from Stackoverflow, ref. in README) */
 
 function disableCheckButton() {
     document.getElementById('check-answer').disabled = true;
@@ -151,7 +156,8 @@ function enableCheckButton() {
     document.getElementById('check-answer').disabled = false;
 }
 
-/* Checking the players answer by comparing newWord with player input(Adapted from Love Maths and www.geeksforgeeks.org) */
+/* Checking the players answer by comparing newWord with player 
+*input(Adapted from Love Maths and www.geeksforgeeks.org) */
 
 function checkAnswer() {
     document.getElementById('hint').textContent = randomHint;
@@ -175,7 +181,8 @@ function checkAnswer() {
     }
 }
 
-/* Gets the currect score from the DOM and increments it (Adapted from Love Maths) */
+/* Gets the currect score from the DOM 
+*and increments it (Adapted from Love Maths) */
 function keepScore() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('score').innerText = ++currentScore;
@@ -187,7 +194,8 @@ function endGame() {
     document.getElementById('game-end').innerText = (`Game End! Your score is: ${currentScore}`);
 }
 
-/* Reseting when the game has ended so a new game can be played */
+/* Reseting when the game has ended so a new game can be 
+*started by clicking play-again button */
 function resetGame() {
     document.getElementById('score').innerText = '0';
     wordsPlayed = 0;

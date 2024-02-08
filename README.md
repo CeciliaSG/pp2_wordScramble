@@ -10,7 +10,7 @@ They player provides their answer in the input field and clicks check answer to 
 
 Each game consists of 20 words.
 
-<h2 align="center"><img src"></h2>
+<h2 align="center"><img src="documentation/showcase.png"></h2>
 
 ## User Experience (UX)
 
