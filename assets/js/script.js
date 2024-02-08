@@ -1,3 +1,5 @@
+"use strict";
+
 // Import words and hints from seperate js-file
 import { words, hints } from "./words.js";
 
