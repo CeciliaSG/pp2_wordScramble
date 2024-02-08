@@ -52,8 +52,16 @@ Each game consists of 20 words.
 ## Features
 
 - Responsive on all device sizes.
-
 - Interactive elements: buttons and  an input field for player input.
+- Page: [View](documentation/page.png)
+- Mobile: [View](documentation/screens_on_mobile.png)
+- Welcome alert: [View](documentation/welcome_to_the_game.png)
+- Incorrect alert: [View](documentation/that_is_incorrect.png)
+- Revealing the hint: [View](documentation/revealing_hint.png)
+- Button colour change to promps player to get new word: [View](documentation/prompting_newword.png)
+- End of the game, revealing the button to play-again: [View](documentation/game_end.png)
+- [View]()
+- [View]()
 
 ## Technologies Used
 
