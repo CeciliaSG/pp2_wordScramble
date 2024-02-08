@@ -53,15 +53,17 @@ Each game consists of 20 words.
 
 - Responsive on all device sizes.
 - Interactive elements: buttons and  an input field for player input.
-- Page: [View](documentation/page.png)
-- Mobile: [View](documentation/screens_on_mobile.png)
-- Welcome alert: [View](documentation/welcome_to_the_game.png)
-- Incorrect alert: [View](documentation/that_is_incorrect.png)
-- Revealing the hint: [View](documentation/revealing_hint.png)
-- Button colour change to promps player to get new word: [View](documentation/prompting_newword.png)
-- End of the game, revealing the button to play-again: [View](documentation/game_end.png)
-- [View]()
-- [View]()
+- Page: <h2 align="center"><img src="documentation/page.png"></h2>
+- Buttons: <h2 align="center"><img src="documentation/checkanswerandnewword_buttons.png"></h2>
+- NewWord button: <h2 align="center"><img src="documentation/newword_button.png"></h2>
+- Play-again button: <h2 align="center"><img src="documentation/play_again_button.png"></h2>
+- Mobile: <h2 align="center"><img src="documentation/screens_on_mobile.png"></h2>
+- Welcome alert: <h2 align="center"><img src="documentation/welcome_to_the_game.png"></h2>
+- Incorrect alert: <h2 align="center"><img src="documentation/that_is_incorrect.png"></h2>
+- Revealing the hint: <h2 align="center"><img src="documentation/revealing_hint.png"></h2>
+- Button colour change to promps player to get new word: <h2 align="center"><img src="documentation/prompting_newword.png"></h2>
+- End of the game, revealing the button to play-again: <h2 align="center"><img src="documentation/game_end.png"></h2>
+
 
 ## Technologies Used
 
