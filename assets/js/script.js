@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /* Separate function to handle the game in-round/attempts */
 
 function handleRound() {
-    document.getElementById('player-input').value = '';
+   
 
     if (currentAttempts < MAX_ATTEMPTS) {
         alert('That is incorrect!');
@@ -122,6 +122,7 @@ function handleRound() {
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         changeButtonColor();
+        document.getElementById('player-input').value = '';
     }
 }
 
