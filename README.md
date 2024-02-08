@@ -93,10 +93,10 @@ I manually tested the site/game throughout the development of this project by te
 Result of manual testing:
 | Feature | Description | Testing | Result |
 | ----------- | ----------- | ----------- | ----------- |
-| Button  | check-answer|   | |
+| Button  | check-answer| Button ws clicked twice for an incorrect input and once for a correct input.  | the correct alerts are displayed and the clue is displayed after the first incorrect attempt, and the answer is revealed after the second incorrect attempt - when the newword button also changes colour to prompt the player to get a new word. The happens for a correct word. |
 | Button | new-word | | |
 | Button | play-again | | |
-| Input-field | player-answer | | |
+| Input-field | player-answer |A word was inputed and the check anser button clicked |  |
 
 
 The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the page and the game functions.
