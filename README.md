@@ -93,7 +93,8 @@ The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to va
 - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
 - [JS Hint Validator](https://jshint.com/)[View](documentation/first_test_jshint.png) [View](documentation/second_jshint_test.png) Unsure of how to correct this.
-- [Lighthouse] First test: [View](documentation/first_lighthouse_report#2.png), (documentation/first_lighthouse_report#1.png)
+- Lighthouse:
+First test: [View](documentation/first_lighthouse_report#2.png), (documentation/first_lighthouse_report#1.png)
   
 ### Further Testing
 
@@ -164,7 +165,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-- I used this walkthrough to get an understanding of how to build the game: [https://www.youtube.com/watch?v=2wJKJRa9ncI] But I've created a simpler game.
+- I used this walkthrough to get an understanding of how to build a word scramble game: [https://www.youtube.com/watch?v=2wJKJRa9ncI] 
 - I also used this, to get me started: [https://www.geeksforgeeks.org/word-scramble-game-using-javascript/]
 - Generating a random word: [https://stackoverflow.com/questions/48271510/how-do-i-get-a-random-word-of-a-certain-length-from-an-array](https://stackoverflow.com)
 - Scrambling a word: [<https://stackoverflow.com/questions/73417426/what-did-i-do-wrong-in-this-javascript-code>](https://stackoverflow.com)
@@ -177,6 +178,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - This war Card game helped me understand how to import new word array from a seperate js-file:
 [<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
 Importing multiple arrays: [https://stackoverflow.com/questions/48909652/how-to-import-multiple-things-in-javascript](https://stackoverflow.com)
+- Retuning an object: [<https://stackoverflow.com/questions/2917175/return-multiple-values-in-javascript/2917186#2917186>](https://stackoverflow.com)
 
 ### Content
 

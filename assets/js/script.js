@@ -20,10 +20,11 @@ document.getElementById('check-answer').addEventListener('click', checkAnswer);
 document.getElementById('new-word').addEventListener('click', startGame);
 document.getElementById('play-again').addEventListener('click', resetGame);
 
-/* Add function to generate a random word and corresponding hint from the words array */
+/* Function to generate a random word and corresponding hint from the words array */
 
 function RandomWordAndHint() {
 
+/* Copies of the arrays to that they don't get depleted */
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
@@ -35,7 +36,7 @@ function RandomWordAndHint() {
     console.log("Hint index:", randomIndex);
 
     //Remove the used/choosen word and correspongind hint from the array so it doesn't load twice
-    //Using the splice method.
+    //Using the splice
 
     randomWord = wordsCopy[randomIndex];
     randomHint = hintsCopy[randomIndex];
@@ -125,8 +126,10 @@ function handleRound() {
 function changeButtonColor() {
     let button = document.getElementById('new-word');
     let newColor = 'var(--orange)';
+    let textColor = '#000000';
 
     button.style.background = newColor;
+    button.style.color = textColor; 
 }
 
 /* Function to reset button colour and the hint (adapted from Stackoverflow, ref. in README) */
