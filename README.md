@@ -68,11 +68,11 @@ Each game consists of 20 words.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Sen' font into the index.html file which is used throughout the project.
 2. [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to CodeAnywhere and Push to GitHub.
+    - Git was used for version control by utilising the Gitpod terminal to commit to CodeAnywhere and Push to GitHub.
 3. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 4. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
+    - Photoshop was used to create the logo, resising images and editing photos for the website.
 5. [Cloudconvert:](https://cloudconvert.com)
     - Cloud convert was used to convert images to webp.
 
@@ -84,7 +84,7 @@ The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to va
 
 - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
-- [JS Hint Validator](https://jshint.com/)[View](documentation/first_test_jshint.png)
+- [JS Hint Validator](https://jshint.com/)[View](documentation/first_test_jshint.png) [View](documentation/second_jshint_test.png) Unsure of how to correct this.
 - [Lighthouse] First test: [View](documentation/first_lighthouse_report#2.png), (documentation/first_lighthouse_report#1.png)
   
 ### Further Testing
