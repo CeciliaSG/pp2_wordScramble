@@ -94,7 +94,7 @@ Result of manual testing:
 | Button  | check-answer| Button was clicked twice for an incorrect input and once for a correct input.  | The correct alerts are displayed and the clue is displayed (correct clue is displayed) after the first incorrect attempt, and the answer is revealed after the second incorrect attempt - when the newword button also changes colour to prompt the player to get a new word. The happens for a correct word. |
 | Button | new-word |was clicked  | A new word generates when button is cklicked |
 | Button | play-again | was clicked | The game ends when the maximum number of words for a game has been reached. The game is reset and begins again when the button is clicked. |
-| Input-field | player-answer |A word was inputed and the check answer button clicked. The word is checked against the original answer and an alert is returned. |  |
+| Input-field | player-answer |A word was inputed and the check answer button clicked. The word is checked against the original answer and an alert is returned. | The word is checked against the original answer and an alert is returned telling the player if there input was correct or incorrect. It works and check against the correct word. |
 
 The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the page and the game functions.
 
@@ -103,6 +103,7 @@ The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to va
 - [JS Hint Validator](https://jshint.com/) - [View](documentation/first_test_jshint.png) - [View](documentation/second_jshint_test.png) Unsure of how to correct this.
 - Lighthouse:
 First test: <h2 align="center"><img src="documentation/first_lighthouse_report#2.png"></h2>, <h2 align="center"><img src="documentation/first_lighthouse_report#1.png"></h2>
+Second test: <h2 align="center"><img src="documentation/first_lighthouse_report#2.png"></h2>, <h2 align="center"><img src="documentation/first_lighthouse_report#1.png"></h2>
   
 ### Further Testing
 
