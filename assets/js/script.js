@@ -156,7 +156,7 @@ function enableCheckButton() {
     document.getElementById('check-answer').disabled = false;
 }
 
-/* Checking the players answer by comparing newWord with player 
+/* Checking the players answer by comparing the original word with player 
 *input(Adapted from Love Maths and www.geeksforgeeks.org) */
 
 function checkAnswer() {

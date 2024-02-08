@@ -24,8 +24,7 @@ Each game consists of 20 words.
 - #### Returning Visitor Goals
 
         1. As a Returning Visitor, I like playing word games and testing my word skills.
-        2. As a Returning Visitor, I want to check to see if there are new words to try my skills at.
-        3. As a Returning Visitor, 
+        2. As a Returning Visitor, I want to check to see if there are new words to try my skills at. 
 
 - ### Design
 
@@ -168,8 +167,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Credits
 
-- This post on stackoverflow, as well as going back over the course material helped me get started with the leaderboard: [<https://stackoverflow.com/questions/47918195/creating-a-basic-html-javascript-leaderboard>]
-- The Love Maths walkthrough was used to guide me in building the word scramble game.
+- The Love Maths walkthrough was used to guide me in building the word scramble game, as well as the course material.
 - My mentor helped me figure out the problem with splice when generating random words from the array. The code I had written wasn't doing what I wanted. He also suggested setting the main colours in css so as to make the code easier to maintain.
 
 ### Code
@@ -180,14 +178,14 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - Scrambling a word: [<https://stackoverflow.com/questions/73417426/what-did-i-do-wrong-in-this-javascript-code>](https://stackoverflow.com)
 - Fisher Yates shuffle was used to shuffle the letters in the words: [<https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle>]
 - Setting colours in css: [https://stackoverflow.com/questions/9436123/javascript-changing-a-class-style/65471649#65471649](https://stackoverflow.com)
-- Disabling and enabling buttons; [<https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737#13831737>] (<https://stackoverflow.com>)
+- Disabling and enabling buttons; [<https://stackoverflow.com/questions/13831601/disabling-and-enabling-a-html-input-button/13831737#13831737>] (<https://stackoverflow.com>) and here: [https://www.altcademy.com/blog/how-to-disable-a-button-in-javascript/](https://www.altcademy.com/)
 - Changing button colour with Javascript: [https://stackoverflow.com/questions/50997993/how-to-change-html-button-color-with-javascript]
 - Using a copy of an array in javascript/spread operator: [https://www.geeksforgeeks.org/copy-array-items-into-another-array-in-javascript/#approaches-1-using-the-spread-operator-](https://stackoverflow.com)
-- Hiding buttons with Javascript: [https://stackoverflow.com/questions/18068773/is-it-possible-to-show-hide-a-button-on-a-webpage-when-a-users-javascript-is-tu](https://stackoverflow.com)
+- Hiding and showing buttons with Javascript: [https://www.shecodes.io/athena/28677-how-to-hide-an-element-until-page-loads](www.shecodes.io)
 - This war Card game helped me understand how to import new word array from a seperate js-file:
 [<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
 Importing multiple arrays: [https://stackoverflow.com/questions/48909652/how-to-import-multiple-things-in-javascript](https://stackoverflow.com)
-- Retuning an object: [<https://stackoverflow.com/questions/2917175/return-multiple-values-in-javascript/2917186#2917186>](https://stackoverflow.com)
+- Returning an object: [<https://stackoverflow.com/questions/2917175/return-multiple-values-in-javascript/2917186#2917186>](https://stackoverflow.com)
 - EventListeners: [https://www.w3schools.com/js/js_htmldom_eventlistener.asp](www.w3schools.com)
 - Object literal shorthand: [<https://stackoverflow.com/questions/38819621/object-literal-property-value-shorthand>](https://stackoverflow.com)
 
