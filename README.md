@@ -101,9 +101,9 @@ The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to va
 
 - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fceciliasg.github.io%2Fpp2_wordScramble%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
-- [JS Hint Validator](https://jshint.com/)[View](documentation/first_test_jshint.png) [View](documentation/second_jshint_test.png) Unsure of how to correct this.
+- [JS Hint Validator](https://jshint.com/) - [View](documentation/first_test_jshint.png) - [View](documentation/second_jshint_test.png) Unsure of how to correct this.
 - Lighthouse:
-First test: [View](documentation/first_lighthouse_report#2.png), (documentation/first_lighthouse_report#1.png)
+First test: <h2 align="center"><img src="documentation/first_lighthouse_report#2.png"></h2>, <h2 align="center"><img src="documentation/first_lighthouse_report#1.png"></h2>
   
 ### Further Testing
 
