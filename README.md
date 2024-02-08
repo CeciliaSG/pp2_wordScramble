@@ -188,6 +188,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 [<https://github.com/WebDevSimplified/War-Card-Game/blob/main/script.js>]
 Importing multiple arrays: [https://stackoverflow.com/questions/48909652/how-to-import-multiple-things-in-javascript](https://stackoverflow.com)
 - Retuning an object: [<https://stackoverflow.com/questions/2917175/return-multiple-values-in-javascript/2917186#2917186>](https://stackoverflow.com)
+- EventListeners: [https://www.w3schools.com/js/js_htmldom_eventlistener.asp](www.w3schools.com)
 
 ### Content
 
