@@ -44,7 +44,7 @@ function RandomWordAndHint() {
 
     originalWord = randomWord;
 
-    return { word: randomWord, hint: randomHint };
+    return { randomWord, randomHint };
 }
 
 //Function to scramble the letters in the word
@@ -73,7 +73,7 @@ function startGame() {
     currentAttempts = 0;
 
     /* Get a new word only if the game is not over */
-    let { word: randomWord } = RandomWordAndHint();
+    let { randomWord } = RandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
 
 
@@ -162,9 +162,10 @@ function enableCheckButton() {
 function checkAnswer() {
     document.getElementById('hint').textContent = randomHint;
 
-    //Check player input against original word
-    // Let player know answer is correct, else back to handleRound()
-    //Provide correct answer on second attempt
+    /* Check player input against original word
+    *Let player know answer is correct, else back to handleRound()
+    *Provide correct answer on second attempt
+    *Adapted from Love Maths */
     let playerInput = document.getElementById('player-input').value.toLowerCase();
     let isCorrect = playerInput === originalWord.toLowerCase();
 
