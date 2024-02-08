@@ -87,13 +87,11 @@ The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to va
 - [JS Hint Validator](https://jshint.com/)[View](documentation/first_test_jshint.png)
 - [Lighthouse] First test: [View](documentation/first_lighthouse_report#2.png), (documentation/first_lighthouse_report#1.png)
   
-
 ### Further Testing
 
 - The Website was tested on Google Chrome, Firefox and Safari browsers.
-- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-- A large amount of testing was done to ensure that all pages were linking correctly.
-- Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+- The website was viewed on a variety of devices such as Desktop, Laptop and iPhone10.
+- A large amount of manual testing was done to ensure that all buttons and functions are workin and linking correctly.
 - [Coolors](https://coolors.co) was used to check the contrast of colours.
 
 ### Known Bugs

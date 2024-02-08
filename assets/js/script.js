@@ -1,3 +1,4 @@
+//Adding strict statement as suggested by JSHint
 "use strict";
 
 // Import words and hints from seperate js-file
