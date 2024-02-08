@@ -15,10 +15,7 @@ let originalWord;
 let randomWord;
 let randomHint;
 
-//EventListeners for buttons
-document.getElementById('check-answer').addEventListener('click', checkAnswer);
-document.getElementById('new-word').addEventListener('click', startGame);
-document.getElementById('play-again').addEventListener('click', resetGame);
+
 
 /* Function to generate a random word and corresponding hint from the words array */
 
@@ -103,6 +100,10 @@ function initialiseGame() {
     startGame();
 }
 document.addEventListener("DOMContentLoaded", function () {
+    //EventListeners for buttons
+    document.getElementById('check-answer').addEventListener('click', checkAnswer);
+    document.getElementById('new-word').addEventListener('click', startGame);
+    document.getElementById('play-again').addEventListener('click', resetGame);
     initialiseGame();
 });
 
