@@ -136,6 +136,7 @@ function changeButtonColor() {
 
 function resetNewWordButton() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
+    document.getElementById('new-word').style.color = '#ffffff'; 
     document.getElementById('hint').textContent = '';
 }
 
