@@ -88,7 +88,16 @@ Each game consists of 20 words.
 
 ## Testing
 
-I manually tested the site/game throughout the development of this project by testing the functions and using chrome developer tools to test for responsiveness, positioning etc. I also used the dev tools to help identify issues and problems in my Javascript - and used console.logs to find and resolve the issues
+I manually tested the site/game throughout the development of this project by testing the functions and using chrome developer tools to test for responsiveness, positioning etc. I also used the dev tools to help identify issues and problems in my Javascript - and used console.logs to find and resolve the issues.
+
+Result of manual testing:
+| Feature | Description | Testing | Result |
+| ----------- | ----------- | ----------- | ----------- |
+| Button  | check-answer|   | |
+| Button | new-word | | |
+| Button | play-again | | |
+| Input-field | player-answer | | |
+
 
 The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the page and the game functions.
 
