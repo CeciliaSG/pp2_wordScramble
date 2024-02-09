@@ -29,16 +29,6 @@ function RandomWordAndHint() {
 
     let randomIndex = Math.floor(Math.random() * wordsCopy.length);
 
-    console.log("Random index:", randomIndex);
-    console.log("Before splice - wordsCopy length:", wordsCopy.length);
-    console.log("Before splice - hintsCopy length:", hintsCopy.length);
-
-    console.log("Word index:", randomIndex);
-    console.log("Hint index:", randomIndex);
-
-    console.log("Random word:", randomWord);
-    console.log("Random hint:", randomHint);
-
     /* Remove the used/choosen word and corresponding hint 
     *from the array so it doesn't load twice
     /* Using the splice */
@@ -193,11 +183,6 @@ function checkAnswer() {
     let playerInput = document.getElementById('player-input').value.toLowerCase();
     let isCorrect = playerInput === originalWord.toLowerCase();
 
-    console.log("wordsPlayed:", wordsPlayed);
-    console.log("MAX_WORDS:", MAX_WORDS);
-    console.log("currentAttempts:", currentAttempts);
-    console.log("MAX_ATTEMPTS:", MAX_ATTEMPTS);
-
     if (isCorrect) {
         alert('Congratulations, you got it right!');
         keepScore();
@@ -214,7 +199,6 @@ function checkAnswer() {
 
     if (wordsPlayed >= MAX_WORDS && currentAttempts < MAX_ATTEMPTS) {
         endGame();
-        console.log("Ending game...");
 
         document.getElementById('new-word').disabled = true;
         disableCheckButton();
