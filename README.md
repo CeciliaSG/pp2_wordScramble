@@ -104,7 +104,7 @@ The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to va
 - Lighthouse:
 First test: <h2 align="center"><img src="documentation/first_lighthouse_report#2.png"></h2>, <h2 align="center"><img src="documentation/first_lighthouse_report#1.png"></h2>
 Second test: <h2 align="center"><img src="documentation/first_lighthouse_report#2.png"></h2>, <h2 align="center"><img src="documentation/first_lighthouse_report#1.png"></h2>
-Colours was then teste Coolors and changes wer made to increase contrast.
+Colours was then teste Coolors and changes were made to increase contrast.
   
 ### Further Testing
 
