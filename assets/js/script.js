@@ -21,7 +21,7 @@ let randomHint;
 
 function RandomWordAndHint() {
 
-/* Copies of the arrays to that they don't get depleted */
+    /* Copies of the arrays to that they don't get depleted */
     let wordsCopy = [...words];
     let hintsCopy = [...hints];
 
@@ -113,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
 /* Separate function to handle the game in-round/attempts */
 
 function handleRound() {
-   
 
     if (currentAttempts < MAX_ATTEMPTS) {
         alert('That is incorrect!');
@@ -126,6 +125,16 @@ function handleRound() {
         disableCheckButton();
         document.getElementById('player-input').value = '';
     }
+
+    if (wordsPlayed >= MAX_WORDS && currentAttempts >= MAX_ATTEMPTS) {
+        endGame();
+
+        document.getElementById('new-word').disabled = true;
+        disableCheckButton();
+
+        /* Displaying play again button after game has ended */
+        document.getElementById('play-again').style.display = 'block';
+    }
 }
 
 /* Change the colour of the New word button 
@@ -136,7 +145,7 @@ function changeButtonColor() {
     let textColor = 'var(--dark-blue)';
 
     button.style.background = newColor;
-    button.style.color = textColor; 
+    button.style.color = textColor;
 }
 
 /* Function to reset button colour and the hint 
@@ -144,7 +153,7 @@ function changeButtonColor() {
 
 function resetNewWordButton() {
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
-    document.getElementById('new-word').style.color = '#ffffff'; 
+    document.getElementById('new-word').style.color = '#ffffff';
     document.getElementById('hint').textContent = '';
 }
 
@@ -164,6 +173,7 @@ function enableCheckButton() {
 
 function checkAnswer() {
     document.getElementById('hint').textContent = randomHint;
+    changeButtonColor();
 
     /* Check player input against original word
     *Let player know answer is correct, else back to handleRound()
@@ -179,6 +189,18 @@ function checkAnswer() {
         changeButtonColor();
         disableCheckButton();
         currentAttempts = 0;
+        startGame();
+
+        if (wordsPlayed >= MAX_WORDS - 1 && currentAttempts > MAX_ATTEMPTS - 1) {
+            endGame();
+
+            document.getElementById('new-word').disabled = true;
+            disableCheckButton();
+
+            /* Displaying play again button after game has ended */
+            document.getElementById('play-again').style.display = 'block';
+        }
+
     } else {
         handleRound();
         currentAttempts++;
@@ -206,5 +228,6 @@ function resetGame() {
     currentAttempts = 0;
     document.getElementById('new-word').disabled = false;
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
+    document.getElementById('player-input').value = '';
     startGame();
 }
