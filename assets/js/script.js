@@ -219,6 +219,8 @@ function keepScore() {
 function endGame() {
     let currentScore = parseInt(document.getElementById('score').innerText);
     document.getElementById('game-end').innerText = (`Game End! Your score is: ${currentScore}`);
+    document.getElementById('scrambled-word').innerText = ('Thank you for playing!');
+    document.getElementById('hint').textContent = '';
 }
 
 /* Reseting when the game has ended so a new game can be 
