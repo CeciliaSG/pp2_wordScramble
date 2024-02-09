@@ -204,7 +204,7 @@ function checkAnswer() {
         document.getElementById('player-input').value = '';
         changeButtonColor();
         disableCheckButton();
-        /*currentAttempts = 0;*/
+        currentAttempts = 0;
         /*startGame();*/
 
     } else {
@@ -212,7 +212,7 @@ function checkAnswer() {
         currentAttempts++;
     }
 
-    if (wordsPlayed >= MAX_WORDS) {
+    if (wordsPlayed >= MAX_WORDS && currentAttempts < MAX_ATTEMPTS) {
         endGame();
         console.log("Ending game...");
 
