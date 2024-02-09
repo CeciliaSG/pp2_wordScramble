@@ -89,6 +89,7 @@ function startGame() {
         endGame();
 
         document.getElementById('new-word').disabled = true;
+        disableCheckButton();
 
         /* Displaying play again button after game has ended */
         document.getElementById('play-again').style.display = 'block';
@@ -122,6 +123,7 @@ function handleRound() {
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
         changeButtonColor();
+        disableCheckButton();
         document.getElementById('player-input').value = '';
     }
 }
