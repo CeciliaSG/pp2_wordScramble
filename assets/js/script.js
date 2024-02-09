@@ -95,7 +95,7 @@ function startGame() {
     /* Incrementing the words played */
     wordsPlayed++;
 
-    /* If the words played has reached the maxno. */
+    /* If the words played has reached the maxno.*/
     if (wordsPlayed > MAX_WORDS) {
         endGame();
 
@@ -200,9 +200,12 @@ function checkAnswer() {
         changeButtonColor();
         disableCheckButton();
         currentAttempts = 0;
+        startGame();
+        wordsPlayed++;
 
-        if (wordsPlayed >= MAX_WORDS - 1 && currentAttempts > MAX_ATTEMPTS - 1) {
+        if (wordsPlayed > MAX_WORDS - 1 && currentAttempts > MAX_ATTEMPTS - 1) {
             endGame();
+            console.log("Ending game...");
 
             document.getElementById('new-word').disabled = true;
             disableCheckButton();
