@@ -15,22 +15,29 @@ let originalWord;
 let randomWord;
 let randomHint;
 
+  /* Copies of the arrays to that they don't get depleted */
+    let wordsCopy = [...words];
+    let hintsCopy = [...hints];
+
 
 /* Function to generate a random word and 
 *corresponding hint from the words array */
 
 function RandomWordAndHint() {
 
-    /* Copies of the arrays to that they don't get depleted */
-    let wordsCopy = [...words];
-    let hintsCopy = [...hints];
-
     /* Generating a random word and hint from the arrays */
 
-    let randomIndex = [Math.floor(Math.random() * wordsCopy.length)];
+    let randomIndex = Math.floor(Math.random() * wordsCopy.length);
+
+    console.log("Random index:", randomIndex);
+    console.log("Before splice - wordsCopy length:", wordsCopy.length);
+    console.log("Before splice - hintsCopy length:", hintsCopy.length);
 
     console.log("Word index:", randomIndex);
     console.log("Hint index:", randomIndex);
+
+    console.log("Random word:", randomWord);
+    console.log("Random hint:", randomHint);
 
     /* Remove the used/choosen word and correspongind hint 
     *from the array so it doesn't load twice
@@ -41,6 +48,9 @@ function RandomWordAndHint() {
 
     wordsCopy.splice(randomIndex, 1);
     hintsCopy.splice(randomIndex, 1);
+
+    console.log("After splice - wordsCopy length:", wordsCopy.length);
+    console.log("After splice - hintsCopy length:", hintsCopy.length);
 
     originalWord = randomWord;
 
@@ -67,6 +77,7 @@ function startGame() {
     /* Hiding play-again button */
     document.getElementById('play-again').style.display = 'none';
     document.getElementById('game-end').innerText = '';
+    document.getElementById('player-input').value = '';
     enableCheckButton();
     resetNewWordButton();
 
@@ -229,5 +240,7 @@ function resetGame() {
     document.getElementById('new-word').disabled = false;
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
     document.getElementById('player-input').value = '';
+    wordsCopy = [...words];
+    hintsCopy = [...hints];
     startGame();
 }
