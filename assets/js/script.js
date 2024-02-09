@@ -15,9 +15,9 @@ let originalWord;
 let randomWord;
 let randomHint;
 
-  /* Copies of the arrays to that they don't get depleted */
-    let wordsCopy = [...words];
-    let hintsCopy = [...hints];
+/* Copies of the arrays to that they don't get depleted */
+let wordsCopy = [...words];
+let hintsCopy = [...hints];
 
 
 /* Function to generate a random word and 
@@ -193,30 +193,34 @@ function checkAnswer() {
     let playerInput = document.getElementById('player-input').value.toLowerCase();
     let isCorrect = playerInput === originalWord.toLowerCase();
 
+    console.log("wordsPlayed:", wordsPlayed);
+    console.log("MAX_WORDS:", MAX_WORDS);
+    console.log("currentAttempts:", currentAttempts);
+    console.log("MAX_ATTEMPTS:", MAX_ATTEMPTS);
+
     if (isCorrect) {
         alert('Congratulations, you got it right!');
         keepScore();
         document.getElementById('player-input').value = '';
         changeButtonColor();
         disableCheckButton();
-        currentAttempts = 0;
-        startGame();
-        wordsPlayed++;
-
-        if (wordsPlayed > MAX_WORDS - 1 && currentAttempts > MAX_ATTEMPTS - 1) {
-            endGame();
-            console.log("Ending game...");
-
-            document.getElementById('new-word').disabled = true;
-            disableCheckButton();
-
-            /* Displaying play again button after game has ended */
-            document.getElementById('play-again').style.display = 'block';
-        }
+        /*currentAttempts = 0;*/
+        /*startGame();*/
 
     } else {
         handleRound();
         currentAttempts++;
+    }
+
+    if (wordsPlayed >= MAX_WORDS) {
+        endGame();
+        console.log("Ending game...");
+
+        document.getElementById('new-word').disabled = true;
+        disableCheckButton();
+
+        /* Displaying play again button after game has ended */
+        document.getElementById('play-again').style.display = 'block';
     }
 }
 
