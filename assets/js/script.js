@@ -39,7 +39,7 @@ function RandomWordAndHint() {
     console.log("Random word:", randomWord);
     console.log("Random hint:", randomHint);
 
-    /* Remove the used/choosen word and correspongind hint 
+    /* Remove the used/choosen word and corresponding hint 
     *from the array so it doesn't load twice
     /* Using the splice */
 
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function handleRound() {
 
     if (currentAttempts < MAX_ATTEMPTS) {
-        alert('That is incorrect!');
+        alert('That is incorrect! Try again!');
         currentAttempts++;
         document.getElementById('hint').textContent = randomHint;
 
@@ -200,7 +200,6 @@ function checkAnswer() {
         changeButtonColor();
         disableCheckButton();
         currentAttempts = 0;
-        startGame();
 
         if (wordsPlayed >= MAX_WORDS - 1 && currentAttempts > MAX_ATTEMPTS - 1) {
             endGame();
