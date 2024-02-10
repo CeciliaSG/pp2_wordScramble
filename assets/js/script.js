@@ -228,7 +228,7 @@ function resetGame() {
     document.getElementById('new-word').disabled = false;
     document.getElementById('new-word').style.background = 'var(--dark-blue)';
     document.getElementById('player-input').value = '';
-    wordsCopy = [...words];
-    hintsCopy = [...hints];
+    wordsCopy = [];
+    hintsCopy = [];
     startGame();
 }
