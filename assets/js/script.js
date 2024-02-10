@@ -44,8 +44,6 @@ function RandomWordAndHint() {
     return { randomWord, randomHint };
 }
 
-console.log(RandomWordAndHint());
-
 //Function to scramble the letters in the word
 //Using split and join, and Fisher-Yates shuffle algorythm
 
