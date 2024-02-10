@@ -24,7 +24,7 @@ Each game consists of 20 words.
 - #### Returning Visitor Goals
 
         1. As a Returning Visitor, I like playing word games and testing my word skills.
-        2. As a Returning Visitor, I want to check to see if there are new words to try my skills at. 
+        2. As a Returning Visitor, I want to check to see if there are new words to try my skills at. So new words should be added regurlarly.
 
 - ### Design
 
