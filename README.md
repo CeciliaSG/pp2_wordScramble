@@ -60,7 +60,7 @@ Each game consists of 20 words.
 - Welcome alert: <h2 align="center"><img src="documentation/welcome_to_the_game.png"></h2>
 - Incorrect alert: <h2 align="center"><img src="documentation/that_is_incorrect.png"></h2>
 - Revealing the hint: <h2 align="center"><img src="documentation/revealing_hint.png"></h2>
-- Button colour change to promps player to get new word: <h2 align="center"><img src="documentation/prompting_newword.png"></h2>
+- Button colour change to prompts player to get new word: <h2 align="center"><img src="documentation/prompting_new__word.png"></h2>
 - End of the game, revealing the button to play-again: <h2 align="center"><img src="documentation/game_end.png"></h2>
 
 ## Technologies Used
