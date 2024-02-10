@@ -28,7 +28,7 @@ Each game consists of 20 words.
 
 - ### Design
 
-- The design is simple and clean making it easy for the user to quickly understand how to play, where to input their answer and how to check it is correct.
+- The design is simple and clean making it easy for the user to quickly understand how to play, where to input their answer and how to check if it is correct.
 
 - #### Colour Scheme
 
@@ -36,7 +36,7 @@ Each game consists of 20 words.
 
 - #### Typography
 
-- The Sen font is the main and only font used throughout the game, with Sans Serif as the fallback font in case for any reason the font isn't being imported correctly. Sen works well for this game. It's clean and easily readable.
+- The Sen font is the main, and only font used throughout the game, with Sans Serif as the fallback font in case for any reason the font isn't being imported correctly. Sen works well for this game. It's clean and easily readable.
 
 - #### Imagery
 
@@ -80,8 +80,10 @@ Each game consists of 20 words.
 3. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
 4. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resising images and editing photos for the website.
-5. [Cloudconvert:](https://cloudconvert.com)
+    - Photoshop was used to resise the images for the website.
+5. [InDesing:](https://www.adobe.com/se/products/indesign.html)
+ - InDesing was used to create the logo.
+6. [Cloudconvert:](https://cloudconvert.com)
     - Cloud convert was used to convert images to webp.
 
 ## Testing
@@ -117,8 +119,6 @@ Desktop:<h2 align="center"><img src="documentation/lighthouse_desktop.png"></h2>
 - The website was viewed on a variety of devices such as Desktop, Laptop and iPhone10.
 - A large amount of manual testing was done to ensure that all buttons and functions are working and linking correctly.
 - [Coolors](https://coolors.co) was used to check the contrast of colours.
-
-### Known Bugs
 
 ## Deployment
 
@@ -200,12 +200,9 @@ Importing multiple arrays: [https://stackoverflow.com/questions/48909652/how-to-
 
 - The logo was created by my husband.
 
-### Media
-
--
 
 ### Acknowledgements
 
 - My Mentor for continuous helpful feedback.
 
-- Tutor support at Code Institute for their support.
+- Tutor support at Code Institute for their support and help.
