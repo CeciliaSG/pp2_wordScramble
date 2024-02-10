@@ -95,8 +95,8 @@ Result of manual testing:
 | ----------- | ----------- | ----------- | ----------- |
 | Button  | check-answer| Button was clicked twice for an incorrect input and once for a correct input.  | The correct alerts are displayed and the clue is displayed (correct clue is displayed) after the first incorrect attempt, and the answer is revealed after the second incorrect attempt - when the newword button also changes colour to prompt the player to get a new word. This also happens when a correct answer is given. |
 | Button | new-word |was clicked  | A new word generates when button is cklicked |
-| Button | play-again | was clicked | The game ends when the maximum number of words played for a game has been reached. The game is reset and begins again when the button is clicked. |
-| Input-field | player-answer |A word was inputed and the check answer button clicked.| The word is checked against the original answer and an alert is returned telling the player if their input was correct or incorrect. It works as it hsould and checks against the correct word, and returns the correct alerts. |
+| Button | play-again | was clicked | The game ends when the maximum number of words played for a game has been reached. The game is reset and begins again when the play-again button is clicked. |
+| Input-field | player-answer |A word was inputed and the check answer button clicked.| The word is checked against the original word and an alert is returned telling the player if their input was correct or incorrect. It works as it should and checks against the correct word, and returns the correct alerts. |
 
 The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to validate the page and the game functions.
 
