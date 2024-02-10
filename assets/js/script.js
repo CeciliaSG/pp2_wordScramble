@@ -25,7 +25,7 @@ let hintsCopy = [...hints];
 
 function RandomWordAndHint() {
 
-    /* Generating a random word and hint from the arrays */
+    /* Generating a random word and hint from the arrays with Math.random and Math.floor (ref. see README) */
 
     let randomIndex = Math.floor(Math.random() * wordsCopy.length);
 
@@ -38,9 +38,6 @@ function RandomWordAndHint() {
 
     wordsCopy.splice(randomIndex, 1);
     hintsCopy.splice(randomIndex, 1);
-
-    console.log("After splice - wordsCopy length:", wordsCopy.length);
-    console.log("After splice - hintsCopy length:", hintsCopy.length);
 
     originalWord = randomWord;
 
@@ -73,7 +70,7 @@ function startGame() {
 
     currentAttempts = 0;
 
-    /* Get a new word only if the game is not over */
+    /* Get a new word */
     let { randomWord } = RandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
 
@@ -191,7 +188,6 @@ function checkAnswer() {
         changeButtonColor();
         disableCheckButton();
         currentAttempts = 0;
-        /*startGame();*/
 
     } else {
         handleRound();
