@@ -117,11 +117,12 @@ function handleRound() {
         alert('That is incorrect! Try again!');
         currentAttempts++;
         document.getElementById('hint').textContent = randomHint;
+       
 
     } else if (currentAttempts >= MAX_ATTEMPTS) {
         alert(`Incorrect! The correct answer is: ${originalWord}`);
-        changeButtonColor();
         disableCheckButton();
+        changeButtonColor();
         document.getElementById('player-input').value = '';
     }
 
@@ -172,7 +173,6 @@ function enableCheckButton() {
 
 function checkAnswer() {
     document.getElementById('hint').textContent = randomHint;
-    changeButtonColor();
 
     /* Check player input against original word
     *Let player know answer is correct, else back to handleRound()
