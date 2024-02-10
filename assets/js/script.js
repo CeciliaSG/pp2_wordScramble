@@ -9,7 +9,7 @@ let currentAttempts = 0;
 const MAX_ATTEMPTS = 2;
 
 let wordsPlayed = 0;
-const MAX_WORDS = 3;
+const MAX_WORDS = 20;
 
 let originalWord;
 let randomWord;
