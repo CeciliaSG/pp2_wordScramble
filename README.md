@@ -56,7 +56,7 @@ Each game consists of 20 words.
 - Buttons: <h2 align="center"><img src="documentation/checkanswerandnewword_buttons.png"></h2>
 - NewWord button: <h2 align="center"><img src="documentation/newword_button.png"></h2>
 - Play-again button: <h2 align="center"><img src="documentation/play_again_button.png"></h2>
-- Mobile: <h2 align="center"><img src="documentation/screens_on_mobile.png"></h2>
+- Mobile: <h2 align="center"><img src="documentation/mobile.png"></h2>
 - Welcome alert: <h2 align="center"><img src="documentation/welcome_to_the_game.png"></h2>
 - Incorrect alert: <h2 align="center"><img src="documentation/that_is_incorrect.png"></h2>
 - Revealing the hint: <h2 align="center"><img src="documentation/revealing_hint.png"></h2>
@@ -103,8 +103,9 @@ The W3C Markup Validator, W3C CSS Validator and JS Hint Services were used to va
 - [JS Hint Validator](https://jshint.com/) - [View](documentation/first_test_jshint.png) - [View](documentation/second_jshint_test.png) Unsure of how to correct this.
 - Lighthouse:
 First test: <h2 align="center"><img src="documentation/first_lighthouse_report#2.png"></h2>, <h2 align="center"><img src="documentation/first_lighthouse_report#1.png"></h2>
-Second test: <h2 align="center"><img src="documentation/first_lighthouse_report#2.png"></h2>, <h2 align="center"><img src="documentation/first_lighthouse_report#1.png"></h2>
-Colours was then teste Coolors and changes were made to increase contrast.
+Colours was then tested on Coolors and changes were made to increase contrast.
+Second test: <h2 align="center"><img src="documentation/lighthouse_desktop.png"></h2>, <h2 align="center"><img src="documentation/lighthouse_mobile.png"></h2>
+
   
 ### Further Testing
 
