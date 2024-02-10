@@ -44,6 +44,8 @@ function RandomWordAndHint() {
     return { randomWord, randomHint };
 }
 
+console.log(RandomWordAndHint());
+
 //Function to scramble the letters in the word
 //Using split and join, and Fisher-Yates shuffle algorythm
 
@@ -73,7 +75,6 @@ function startGame() {
     /* Get a new word */
     let { randomWord } = RandomWordAndHint();
     let scrambledWord = scrambleWord(randomWord);
-
 
     /* Updating the html with generated word with 
     *getElement and template literals */
