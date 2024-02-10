@@ -100,10 +100,11 @@ function startGame() {
 /* Function to initialise game --> start game */
 
 function initialiseGame() {
-    alert('Ready to play? Two tries for each word and twenty words in each game. How many can you get right? GOOD LUCK ');
+    alert('Ready to play? Two tries for each word and twenty words in each game. How many can you get right? Click ok and the first word will load. GOOD LUCK ');
     startGame();
 }
 document.addEventListener("DOMContentLoaded", function () {
+
     //EventListeners for buttons
     document.getElementById('check-answer').addEventListener('click', checkAnswer);
     document.getElementById('new-word').addEventListener('click', startGame);
