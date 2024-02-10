@@ -58,8 +58,9 @@ Each game consists of 20 words.
 - Play-again button: <h2 align="center"><img src="documentation/play_again_button.png"></h2>
 - Mobile: <h2 align="center"><img src="documentation/mobile.png"></h2>
 - Welcome alert: <h2 align="center"><img src="documentation/welcome_to_the_game.png"></h2>
-- Incorrect alert and revealing hint: <h2 align="center"><img src="documentation/that_is_incorrect.png"></h2>
-- Button colour change to prompts player to get new word: <h2 align="center"><img src="documentation/prompting_new__word.png"></h2>
+- Incorrect alert: <h2 align="center"><img src="documentation/that_is_incorrect.png"></h2>
+- Revealing the clue: <h2 align="center"><img src="documentation/revealing_the_clue.png"></h2>
+- Button colour change to prompts player to get new word after two attempts: <h2 align="center"><img src="documentation/prompting_new__word.png"></h2>
 - End of the game, revealing the button to play-again: <h2 align="center"><img src="documentation/game_end.png"></h2>
 
 ## Technologies Used
